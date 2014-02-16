@@ -5,7 +5,8 @@
                             Id="Пункты маршрута"
                             Name="Пункты маршрута" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
 	<BusinessOperations z:owner="Пункты маршрута">
-		<IBusinessOperationComponent DisplayName="Добавление/размножение"
+		<IBusinessOperationComponent Description="Добавление/размножение"
+		                             DisplayName="Добавление/размножение"
 		                             Id="a37fea18-e01d-41df-9e5a-ab13bbcb5061"
 		                             Identifier="a37fea18-e01d-41df-9e5a-ab13bbcb5061">
 			<OperationTargets z:owner="a37fea18-e01d-41df-9e5a-ab13bbcb5061">
@@ -22,7 +23,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Изменение"
+		<IBusinessOperationComponent Description="Изменение"
+		                             DisplayName="Изменение"
 		                             Id="397032df-370a-4126-a053-27ed2c76c38b"
 		                             Identifier="397032df-370a-4126-a053-27ed2c76c38b">
 			<OperationTargets z:owner="397032df-370a-4126-a053-27ed2c76c38b">
@@ -37,7 +39,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Удаление"
+		<IBusinessOperationComponent Description="Удаление"
+		                             DisplayName="Удаление"
 		                             Id="024eb5df-3da1-48c0-8590-d0815cb5c650"
 		                             Identifier="024eb5df-3da1-48c0-8590-d0815cb5c650">
 			<OperationTargets z:owner="024eb5df-3da1-48c0-8590-d0815cb5c650">
@@ -52,7 +55,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Просмотр"
+		<IBusinessOperationComponent Description="Просмотр"
+		                             DisplayName="Просмотр"
 		                             Id="119e0bc5-2106-421a-b06a-67ff476813db"
 		                             Identifier="119e0bc5-2106-421a-b06a-67ff476813db">
 			<OperationTargets z:owner="119e0bc5-2106-421a-b06a-67ff476813db">

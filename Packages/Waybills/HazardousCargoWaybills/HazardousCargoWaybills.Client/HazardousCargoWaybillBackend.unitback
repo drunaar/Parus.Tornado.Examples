@@ -5,7 +5,8 @@
                             Id="Путевые листы для опасных грузов"
                             Name="Путевые листы для опасных грузов" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
 	<BusinessOperations z:owner="Путевые листы для опасных грузов">
-		<IBusinessOperationComponent DisplayName="Добавление/размножение"
+		<IBusinessOperationComponent Description="Добавление/размножение"
+		                             DisplayName="Добавление/размножение"
 		                             Id="7cadf976-5218-4b96-878f-fd6adbd58302"
 		                             Identifier="7cadf976-5218-4b96-878f-fd6adbd58302">
 			<OperationTargets z:owner="7cadf976-5218-4b96-878f-fd6adbd58302">
@@ -45,7 +46,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Удаление"
+		<IBusinessOperationComponent Description="Удаление"
+		                             DisplayName="Удаление"
 		                             Id="9a6ad5a9-7239-493b-a284-b12675d02672"
 		                             Identifier="9a6ad5a9-7239-493b-a284-b12675d02672">
 			<OperationTargets z:owner="9a6ad5a9-7239-493b-a284-b12675d02672">
@@ -60,7 +62,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Изменение"
+		<IBusinessOperationComponent Description="Изменение"
+		                             DisplayName="Изменение"
 		                             Id="0f55fd3d-1eb5-47d5-a4e3-9ff720ea778c"
 		                             Identifier="0f55fd3d-1eb5-47d5-a4e3-9ff720ea778c">
 			<OperationTargets z:owner="0f55fd3d-1eb5-47d5-a4e3-9ff720ea778c">
@@ -96,7 +99,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Просмотр"
+		<IBusinessOperationComponent Description="Просмотр"
+		                             DisplayName="Просмотр"
 		                             Id="0b8f47a9-528a-4825-9242-ca09151c44dc"
 		                             Identifier="0b8f47a9-528a-4825-9242-ca09151c44dc">
 			<OperationTargets z:owner="0b8f47a9-528a-4825-9242-ca09151c44dc">
@@ -120,7 +124,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Добавление/размножение точек маршрута"
+		<IBusinessOperationComponent Description="Добавление/размножение точек маршрута"
+		                             DisplayName="Добавление/размножение точек маршрута"
 		                             Id="44dc64f3-60d3-497e-aefa-c849198750db"
 		                             Identifier="44dc64f3-60d3-497e-aefa-c849198750db">
 			<OperationTargets z:owner="44dc64f3-60d3-497e-aefa-c849198750db">
@@ -158,7 +163,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Изменение точек маршрута"
+		<IBusinessOperationComponent Description="Изменение точек маршрута"
+		                             DisplayName="Изменение точек маршрута"
 		                             Id="0b7ca7e5-ca3c-4962-af35-aef35b637503"
 		                             Identifier="0b7ca7e5-ca3c-4962-af35-aef35b637503">
 			<OperationTargets z:owner="0b7ca7e5-ca3c-4962-af35-aef35b637503">
@@ -194,7 +200,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Удаление точек маршрута"
+		<IBusinessOperationComponent Description="Удаление точек маршрута"
+		                             DisplayName="Удаление точек маршрута"
 		                             Id="727a9314-92bf-46ac-8476-2f799a60b27a"
 		                             Identifier="727a9314-92bf-46ac-8476-2f799a60b27a">
 			<OperationTargets z:owner="727a9314-92bf-46ac-8476-2f799a60b27a">

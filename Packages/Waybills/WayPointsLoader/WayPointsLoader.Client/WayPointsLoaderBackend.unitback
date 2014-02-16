@@ -4,7 +4,8 @@
                             Id="Загрузчик пунктов маршрута"
                             Name="Загрузчик пунктов маршрута" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
 	<BusinessOperations z:owner="Загрузчик пунктов маршрута">
-		<IBusinessOperationComponent DisplayName="Проверка"
+		<IBusinessOperationComponent Description="Проверка"
+		                             DisplayName="Проверка"
 		                             Id="fe32b38a-6ea8-4082-85b2-5ba8674d8b55"
 		                             Identifier="fe32b38a-6ea8-4082-85b2-5ba8674d8b55">
 			<OperationTargets z:owner="fe32b38a-6ea8-4082-85b2-5ba8674d8b55">
@@ -21,7 +22,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Загрузка"
+		<IBusinessOperationComponent Description="Загрузка"
+		                             DisplayName="Загрузка"
 		                             Id="fa49272d-8626-4df0-875f-ae13dc463570"
 		                             Identifier="fa49272d-8626-4df0-875f-ae13dc463570">
 			<OperationTargets z:owner="fa49272d-8626-4df0-875f-ae13dc463570">

@@ -5,7 +5,8 @@
                             Id="Транспортные средства"
                             Name="Транспортные средства" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
 	<BusinessOperations z:owner="Транспортные средства">
-		<IBusinessOperationComponent DisplayName="Добавление/размножение"
+		<IBusinessOperationComponent Description="Добавление/размножение"
+		                             DisplayName="Добавление/размножение"
 		                             Id="8b1b5fb4-92c7-48d4-b537-fb1358c0ee86"
 		                             Identifier="8b1b5fb4-92c7-48d4-b537-fb1358c0ee86">
 			<OperationTargets z:owner="8b1b5fb4-92c7-48d4-b537-fb1358c0ee86">
@@ -22,7 +23,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Изменение"
+		<IBusinessOperationComponent Description="Изменение"
+		                             DisplayName="Изменение"
 		                             Id="eb2d38d7-72b9-4266-891b-5a2966cb99aa"
 		                             Identifier="eb2d38d7-72b9-4266-891b-5a2966cb99aa">
 			<OperationTargets z:owner="eb2d38d7-72b9-4266-891b-5a2966cb99aa">
@@ -37,7 +39,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Удаление"
+		<IBusinessOperationComponent Description="Удаление"
+		                             DisplayName="Удаление"
 		                             Id="5a1fcf92-7243-4c17-bc1b-ed1100f2f324"
 		                             Identifier="5a1fcf92-7243-4c17-bc1b-ed1100f2f324">
 			<OperationTargets z:owner="5a1fcf92-7243-4c17-bc1b-ed1100f2f324">
@@ -52,7 +55,8 @@
 				</IUnitBackClassComponent>
 			</OperationTargets>
 		</IBusinessOperationComponent>
-		<IBusinessOperationComponent DisplayName="Просмотр"
+		<IBusinessOperationComponent Description="Просмотр"
+		                             DisplayName="Просмотр"
 		                             Id="50a24cfc-26bb-408d-95b0-7ac19706b44c"
 		                             Identifier="50a24cfc-26bb-408d-95b0-7ac19706b44c">
 			<OperationTargets z:owner="50a24cfc-26bb-408d-95b0-7ac19706b44c">
