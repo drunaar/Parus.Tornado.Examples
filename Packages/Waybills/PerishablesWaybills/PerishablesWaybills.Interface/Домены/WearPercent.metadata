@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="6b2cd4c3-9a74-4c08-979c-c107fda4aed9" name="Acme.Business.Waybills.PerishablesWaybills.WearPercent" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Процент износа</Description>
+  <DataType value="Decimal" />
+  <Format>5.2</Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

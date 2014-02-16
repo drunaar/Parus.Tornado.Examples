@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<init xmlns="http://www.parus.ru/initdata.xsd">
+  <items>
+    <data>
+      <insert>
+        <!--Parus.Tornado.LinkUnitInfo-->
+        <!--Parus.Tornado.ContextTransferSpec-->
+        <!--Parus.Tornado.LinkUnitInfo-->
+        <!--Parus.Tornado.ContextTransferSpec-->
+      </insert>
+    </data>
+  </items>
+</init>

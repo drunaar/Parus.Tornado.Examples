@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinkedUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.parus.com/Tornado/Deploy/LinkUnitsXsd.xsd">
+  <Link id="fe6b92fd-7df6-4609-8b5f-9a51a01bc464" displayname="Акт передачи груза/Удалить" order="0" role="" host-type="Same">
+    <link-to>Acme.Business.Waybills.WaybillUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Waybill_Data</link-to-point-discriminant>
+    <call-unit>Acme.Business.Waybills.ConveyanceDeedUnit, Waybills.Client</call-unit>
+    <call-unit-point>StartDelete</call-unit-point>
+    <post-refresh-strategy>Refresh</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>Context.Selection.Current</name>
+        <provider_type>CopyContextSlot</provider_type>
+        <provider_arg>Context.Selection.Current</provider_arg>
+      </parameter>
+    </parameters>
+  </Link>
+  <Link id="cf1c2293-ff7b-445e-a899-f5ca761597b4" displayname="Акт передачи груза/Создать|Изменить…" order="0" role="" host-type="Same">
+    <link-to>Acme.Business.Waybills.WaybillUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Waybill_Data</link-to-point-discriminant>
+    <call-unit>Acme.Business.Waybills.ConveyanceDeedUnit, Waybills.Client</call-unit>
+    <call-unit-point>StartEdit</call-unit-point>
+    <post-refresh-strategy>Refresh</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>Context.Selection.Current</name>
+        <provider_type>CopyContextSlot</provider_type>
+        <provider_arg>Context.Selection.Current</provider_arg>
+      </parameter>
+    </parameters>
+  </Link>
+</LinkedUnits>

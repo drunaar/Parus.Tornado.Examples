@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WayPoints>
+  <WayPoint>
+    <Id>21E08AA1-D728-9EE1-0BBD-DAAD2EC317AF</Id>
+		<Name>Выборг  м.п.</Name>
+		<FullName>Выборг , морской порт, море:Балтийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>1440BBC7-8917-C9D6-4A00-72F6AC4108BA</Id>
+		<Name>Высоцк  м.п.</Name>
+		<FullName>Высоцк , морской порт, море:Балтийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>F6F6DFBF-6123-8072-4F03-143DDF31C10D</Id>
+		<Name>Калининград  м.п.</Name>
+		<FullName>Калининград , морской порт, море:Балтийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>188ED601-5A1D-E4C1-872D-CB1BBCB59312</Id>
+		<Name>Приморск  м.п.</Name>
+		<FullName>Приморск , морской порт, море:Балтийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>815EBE2C-0C09-3382-F3AD-73FD5B31C712</Id>
+		<Name>Санкт-Петербург  м.п.</Name>
+		<FullName>Санкт-Петербург , морской порт, море:Балтийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>AE49D326-1892-D053-DB36-977DF40E000E</Id>
+		<Name>Новороссийск  м.п.</Name>
+		<FullName>Новороссийск , морской порт, море:Чёрное/Азовское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>C1A7287D-3D9F-7807-C7C8-6E6EB20EF151</Id>
+		<Name>Ростов-на-Дону  м.п.</Name>
+		<FullName>Ростов-на-Дону , морской порт, море:Чёрное/Азовское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>6E1D4957-E45D-5234-E926-877BB2DD7237</Id>
+		<Name>Таганрог  м.п.</Name>
+		<FullName>Таганрог , морской порт, море:Чёрное/Азовское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>7F47EEAC-8F0E-6E7C-4CC6-7DA02A6EE4A0</Id>
+		<Name>Темрюк  м.п.</Name>
+		<FullName>Темрюк , морской порт, море:Чёрное/Азовское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>7770D2F8-32BC-C37D-1F18-A40F1FB55736</Id>
+		<Name>Туапсе  м.п.</Name>
+		<FullName>Туапсе , морской порт, море:Чёрное/Азовское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>077EB1B8-FF65-2FF5-84A7-EF57D3AC2AF2</Id>
+		<Name>Астрахань  м.п.</Name>
+		<FullName>Астрахань , морской порт, море:Каспийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>2B14E6C4-8056-A228-97D4-511B63D8B2E9</Id>
+		<Name>Оля  м.п.</Name>
+		<FullName>Оля , морской порт, море:Каспийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>C0F8C152-9C4D-2BFF-C5CD-8F0F93F42FCA</Id>
+		<Name>Махачкала  м.п.</Name>
+		<FullName>Махачкала , морской порт, море:Каспийское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>025D4F64-0F58-B8FE-74F2-AA36E03DF41A</Id>
+		<Name>Мурманск  м.п.</Name>
+		<FullName>Мурманск , морской порт, море:Баренцово</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>5AEA3FD7-135B-78C7-860C-BA88F9C42B8A</Id>
+		<Name>Нарьян-Мар  м.п.</Name>
+		<FullName>Нарьян-Мар , морской порт, море:Баренцово</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>77379D4E-94B5-0673-03AF-BE2A876FCC3A</Id>
+		<Name>Архангельск  м.п.</Name>
+		<FullName>Архангельск , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>90CFF40D-1914-6DC2-63A1-28B344A94F4F</Id>
+		<Name>Беломорск  м.п.</Name>
+		<FullName>Беломорск , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>99F469CD-9ADF-7884-4C83-611B22184452</Id>
+		<Name>Витино  м.п.</Name>
+		<FullName>Витино , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>3F7811E7-49B6-333C-660E-69064C442A80</Id>
+		<Name>Кандалакша  м.п.</Name>
+		<FullName>Кандалакша , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>78737FED-6F40-5257-F62B-CDD4AE812990</Id>
+		<Name>Мезень  м.п.</Name>
+		<FullName>Мезень , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>1AD47570-24D2-1C1F-B975-6A30843BC73D</Id>
+		<Name>Северодвинск  м.п.</Name>
+		<FullName>Северодвинск , морской порт, море:Белое</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>3D04866B-F6A6-F94B-9D0A-4556149AD43D</Id>
+		<Name>Диксон  м.п.</Name>
+		<FullName>Диксон , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>2158FCBD-145D-D179-5952-9D2BFFB6DDD1</Id>
+		<Name>Дудинка  м.п.</Name>
+		<FullName>Дудинка , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>95777BE6-A348-2BB3-E547-432FBD7A4679</Id>
+		<Name>Игарка  м.п.</Name>
+		<FullName>Игарка , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>ABAA45EE-A538-181B-25B3-10CD86C98033</Id>
+		<Name>Певек  м.п.</Name>
+		<FullName>Певек , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>7C3C6EDD-95ED-AD88-EB7D-CD4BE7D3DE74</Id>
+		<Name>Тикси  м.п.</Name>
+		<FullName>Тикси , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>492F89F5-3663-86BA-96FE-0A5D4F3F76E1</Id>
+		<Name>Ямбург  м.п.</Name>
+		<FullName>Ямбург , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>BD783B08-3E3C-9168-91F6-8E3E2FEC586F</Id>
+		<Name>Амбарчик  м.п.</Name>
+		<FullName>Амбарчик , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>35DE10EA-EEF7-BFF1-FC9C-1E0C77D5B260</Id>
+		<Name>Зеленый Мыс  м.п.</Name>
+		<FullName>Зеленый Мыс , морской порт, море:Лаптевых/Карское/Восточно-Сибирское</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>DBB219F7-1448-359A-398C-E279578846D1</Id>
+		<Name>Александровск-Сахалинский  м.п.</Name>
+		<FullName>Александровск-Сахалинский , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>987025DD-48B1-9A79-9E0B-A263A5451F59</Id>
+		<Name>Анадырь  м.п.</Name>
+		<FullName>Анадырь , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>37E6EF56-587A-815A-D524-7630AF083BCD</Id>
+		<Name>Беринговский  м.п.</Name>
+		<FullName>Беринговский , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>84C05B0E-008C-072A-86F3-29C37ADAD43C</Id>
+		<Name>Ванино  м.п.</Name>
+		<FullName>Ванино , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>BBA96652-8B11-9EE3-141A-501AC146DD47</Id>
+		<Name>Владивосток  м.п.</Name>
+		<FullName>Владивосток , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>0176FFE3-5DBF-A914-6BC5-25E50D6DBAAB</Id>
+		<Name>Восточный  м.п.</Name>
+		<FullName>Восточный , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>9E064B5F-CA18-F723-403F-A8BE71B77D3E</Id>
+		<Name>Корсаков  м.п.</Name>
+		<FullName>Корсаков , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>BC514CEC-D86A-41FB-4EB9-4C1F7EE7612A</Id>
+		<Name>Красногорск  м.п.</Name>
+		<FullName>Красногорск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>57317142-81A7-BEC7-D556-B379C874A9A7</Id>
+		<Name>Магадан  м.п.</Name>
+		<FullName>Магадан , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>2CF86518-0022-2501-6729-F3B5C1B02865</Id>
+		<Name>Находка  м.п.</Name>
+		<FullName>Находка , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>AA40FB37-1E6E-C11F-129C-CFD85F7FA6DB</Id>
+		<Name>Николаевск-на-Амуре  м.п.</Name>
+		<FullName>Николаевск-на-Амуре , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>22F20AFF-CB29-F9BF-608D-68B3EFC1A1CB</Id>
+		<Name>Охотск  м.п.</Name>
+		<FullName>Охотск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>E508649F-0631-5C91-8E18-182B54B4AB2C</Id>
+		<Name>Петропавловск-Камчатский  м.п.</Name>
+		<FullName>Петропавловск-Камчатский , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>25758F21-41C2-5BC9-17E1-FECD5CD02BDA</Id>
+		<Name>Поронайск  м.п.</Name>
+		<FullName>Поронайск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>2DD66113-61F8-E5D7-C394-ED379BF3CF2D</Id>
+		<Name>Посьет  м.п.</Name>
+		<FullName>Посьет , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>9B481FC7-4DC3-6DA0-80B9-A4B1028860DB</Id>
+		<Name>Провидения  м.п.</Name>
+		<FullName>Провидения , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>FD6FDF3A-F400-49E8-EFE2-93297EA576E6</Id>
+		<Name>Советская Гавань  м.п.</Name>
+		<FullName>Советская Гавань , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>E292CD26-A2F2-258D-B53E-FB16A606B43A</Id>
+		<Name>Углегорск  м.п.</Name>
+		<FullName>Углегорск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>17228D74-E68D-E5FC-4DFE-B6547858F423</Id>
+		<Name>Усть-Камчатск  м.п.</Name>
+		<FullName>Усть-Камчатск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>8A38ABCB-6E98-BF6B-AC8F-92213F73B3F3</Id>
+		<Name>Холмск  м.п.</Name>
+		<FullName>Холмск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>F28D3CA8-243C-BB3F-9B2F-527444AD086C</Id>
+		<Name>Шахтерск  м.п.</Name>
+		<FullName>Шахтерск , морской порт, Тихий океан</FullName>
+	</WayPoint>
+	<WayPoint>
+		<Id>D6D55776-0BFC-29D8-3C9A-029ACD97ED45</Id>
+		<Name>Эгвекинот  м.п.</Name>
+		<FullName>Эгвекинот , морской порт, Тихий океан</FullName>
+	</WayPoint>
+</WayPoints>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unitModelDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FileManager">
+  <unitModelMoniker name="/FileManager" />
+  <nestedChildShapes>
+    <startPointShape Id="9ba7aaab-834d-4ebe-b9ac-d5517b24ca47" absoluteBounds="0.5, 0.875, 0.25, 0.25">
+      <startPointModelMoniker name="/FileManager/Upload" />
+      <relativeChildShapes />
+    </startPointShape>
+    <interactionPointShape Id="0b6661dc-d12f-4b04-88c0-69850aae933a" absoluteBounds="2.125, 0.5, 2, 1">
+      <interactionPointModelMoniker name="/FileManager/UploadForm" />
+    </interactionPointShape>
+    <endPointShape Id="95eff54e-1001-4912-846b-953fb470b826" absoluteBounds="5.75, 1.25, 0.25, 0.25">
+      <endPointModelMoniker name="/FileManager/Upload.Cancel" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="961f4353-316d-470a-9bb1-c7c2d131d0b2" absoluteBounds="5.75, 0.5, 0.25, 0.25">
+      <endPointModelMoniker name="/FileManager/Upload.Ok" />
+      <relativeChildShapes />
+    </endPointShape>
+    <graphConnector edgePoints="[(4.125 : 0.625); (5.75 : 0.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/FileManager/UploadForm/Ok@UploadForm" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="0b6661dc-d12f-4b04-88c0-69850aae933a" />
+        <endPointShapeMoniker Id="961f4353-316d-470a-9bb1-c7c2d131d0b2" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(4.125 : 1.375); (5.75 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <unitTransitionModelMoniker name="/FileManager/UploadForm/Cancel@UploadForm" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="0b6661dc-d12f-4b04-88c0-69850aae933a" />
+        <endPointShapeMoniker Id="95eff54e-1001-4912-846b-953fb470b826" />
+      </nodes>
+    </graphConnector>
+    <startPointShape Id="d8f3c4ca-0e8d-4d6c-93d1-b7b8af9eb06c" absoluteBounds="0.5, 2.375, 0.25, 0.25">
+      <startPointModelMoniker name="/FileManager/Download" />
+      <relativeChildShapes />
+    </startPointShape>
+    <interactionPointShape Id="291346dc-eed9-4837-afae-235a4dd41581" absoluteBounds="2.125, 2, 2, 1">
+      <interactionPointModelMoniker name="/FileManager/DownloadForm" />
+    </interactionPointShape>
+    <graphConnector edgePoints="[(0.75 : 2.5); (2.125 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <unitTransitionModelMoniker name="/FileManager/Download/Init@Download" />
+      <relativeChildShapes />
+      <nodes>
+        <startPointShapeMoniker Id="d8f3c4ca-0e8d-4d6c-93d1-b7b8af9eb06c" />
+        <interactionPointShapeMoniker Id="291346dc-eed9-4837-afae-235a4dd41581" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(0.75 : 1); (2.125 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/FileManager/Upload/Init@Upload" />
+      <relativeChildShapes />
+      <nodes>
+        <startPointShapeMoniker Id="9ba7aaab-834d-4ebe-b9ac-d5517b24ca47" />
+        <interactionPointShapeMoniker Id="0b6661dc-d12f-4b04-88c0-69850aae933a" />
+      </nodes>
+    </graphConnector>
+    <endPointShape Id="702965e7-d797-4422-ab38-cbde2b051ab3" absoluteBounds="5.75, 2.375, 0.25, 0.25">
+      <endPointModelMoniker name="/FileManager/EndPoint" />
+      <relativeChildShapes />
+    </endPointShape>
+    <graphConnector edgePoints="[(4.125 : 2.5); (5.75 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <unitTransitionModelMoniker name="/FileManager/DownloadForm/Close" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="291346dc-eed9-4837-afae-235a4dd41581" />
+        <endPointShapeMoniker Id="702965e7-d797-4422-ab38-cbde2b051ab3" />
+      </nodes>
+    </graphConnector>
+  </nestedChildShapes>
+</unitModelDiagram>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="82e88a75-7c07-4357-ba23-f83dbe06b410" name="Acme.Business.Waybills.HazardousCargoWaybills.HazardousType" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Тип опасности</Description>
+  <DataType value="Enumerable" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+  <DomainEnumValues>
+    <DomainEnumValue id="06ac28cb-afdb-4f2d-a703-e5c70e3681cc" name="NonHazard">
+      <Description>Безопасный</Description>
+      <DisplayName>Безопасный</DisplayName>
+      <Deprecated>False</Deprecated>
+    </DomainEnumValue>
+    <DomainEnumValue id="fed8c015-5d2d-4ddf-9a44-ba49430d702b" name="LowHazard">
+      <Description>Малоопасный</Description>
+      <DisplayName>Малоопасный</DisplayName>
+      <Deprecated>False</Deprecated>
+    </DomainEnumValue>
+    <DomainEnumValue id="9951dd79-20e6-4e44-9550-75e6110c48e1" name="MediumHazard">
+      <Description>Среднеопасный</Description>
+      <DisplayName>Среднеопасный</DisplayName>
+      <Deprecated>False</Deprecated>
+    </DomainEnumValue>
+    <DomainEnumValue id="6d08cdc6-5b42-4fce-a61b-da90490529d0" name="HighHazard">
+      <Description>Сильноопасный</Description>
+      <DisplayName>Сильноопасный</DisplayName>
+      <Deprecated>False</Deprecated>
+    </DomainEnumValue>
+  </DomainEnumValues>
+</Domain>

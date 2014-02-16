@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+        xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado"
+       Id="m_PerishablesWaybillEditForm"
+       Loaded="Form_LoadedEventHandler"
+       Size="121.4438 mm; 63.50 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<BindKey z:owner="m_BindingProvider"></BindKey>
+	<Layout z:owner="LayoutManager">LayoutManager3</Layout>
+	<LayoutManager z:owner="m_PerishablesWaybillEditForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<ITableLayout Id="LayoutManager3">
+				<Columns z:owner="LayoutManager3">
+					<ILayoutColumn Percent="100"
+					               SizeType="Absolute"
+					               Width="42 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+					<ILayoutColumn Percent="100"
+					               SizeType="Percent"
+					               Width="0 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+				</Columns>
+				<Rows z:owner="LayoutManager3">
+					<ILayoutRow Height="21 mm"
+					            Percent="50"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="7 mm"
+					            Percent="0"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="7 mm"
+					            Percent="0"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="0 mm"
+					            Percent="100"
+					            SizeType="Percent">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+				</Rows>
+			</ITableLayout>
+			<ITableLayout Id="LayoutManager5">
+				<Columns z:owner="LayoutManager5">
+					<ILayoutColumn Percent="100"
+					               SizeType="Percent"
+					               Width="0 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+				</Columns>
+				<Rows z:owner="LayoutManager5">
+					<ILayoutRow Height="0 mm"
+					            Percent="100"
+					            SizeType="Percent">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+				</Rows>
+			</ITableLayout>
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+	<IDateTimeEdit Format="d"
+	               Id="m_ServiceableLife"
+	               PredefinedFormat="ShortDate"
+	               TabIndex="2"
+	               TabStop="True"
+	               ValueChanged="ServiceableLife_ValueChangedEventHandler">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">1,1</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Left</Dock>
+		<Height z:owner="LayoutManager3">5.2917 mm</Height>
+		<Left z:owner="LayoutManager3">43.1271 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">21.9604 mm</Top>
+		<Width z:owner="LayoutManager3">20.6375 mm</Width>
+	</IDateTimeEdit>
+	<INumericEdit Format=""
+	              Id="m_TotalWear"
+	              Precission="5"
+	              ReadOnly="True"
+	              Scale="2"
+	              TabIndex="4"
+	              TabStop="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider">ctx:Value:Context.CurrentObject/TotalWear</BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">1,2</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Left</Dock>
+		<Height z:owner="LayoutManager3">5.2917 mm</Height>
+		<Left z:owner="LayoutManager3">43.1271 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">29.1042 mm</Top>
+		<Width z:owner="LayoutManager3">20.6375 mm</Width>
+	</INumericEdit>
+	<ILabel Id="m_Label1"
+	        TabIndex="3"
+	        TabStop="False"
+	        Text="Общий процент износа:"
+	        WrapText="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,2</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">4.7625 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">29.1042 mm</Top>
+		<Width z:owner="LayoutManager3">39.9521 mm</Width>
+	</ILabel>
+	<ILabel Id="m_Label"
+	        TabIndex="1"
+	        TabStop="False"
+	        Text="Срок годности:"
+	        WrapText="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,1</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">4.7625 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">21.9604 mm</Top>
+		<Width z:owner="LayoutManager3">39.9521 mm</Width>
+	</ILabel>
+	<IFormSocket FormClass="Acme.Business.Waybills.WaybillHeaderEditForm, Waybills.Client"
+	             Id="m_FormSocket"
+	             TabIndex="0"
+	             TabStop="False"
+	             UseDataSource="False">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">2</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">20.9021 mm</Height>
+		<Left z:owner="LayoutManager3">0.0 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">0.0 mm</Top>
+		<Width z:owner="LayoutManager3">121.4438 mm</Width>
+	</IFormSocket>
+	<IGroupBox Id="m_GroupBox1"
+	           TabIndex="5"
+	           TabStop="False"
+	           Text="Точки маршрута">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,3</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">2</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">26.7229 mm</Height>
+		<Layout z:owner="LayoutManager">LayoutManager5</Layout>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<Margins z:owner="LayoutManager5">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">35.9833 mm</Top>
+		<Width z:owner="LayoutManager3">119.3271 mm</Width>
+		<IGrid Id="m_Grid"
+		       TabIndex="0"
+		       TabStop="True">
+			<Anchor z:owner="LayoutManager5">Top, Left</Anchor>
+			<BindKey z:owner="m_BindingProvider">ctx:DataSource:Context.CurrentObject/Route</BindKey>
+			<CellMargins z:owner="LayoutManager5">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+			<CellPosition z:owner="LayoutManager5">0,0</CellPosition>
+			<ColumnGroups z:owner="m_Grid" />
+			<Columns z:owner="m_Grid">
+				<IColumn Caption="№"
+				         DataMember="Number"
+				         DisplayFormat="f0"
+				         Id="m_Column"
+				         MinWidth="5.0271 mm"
+				         Name="m_Column"
+				         ReadOnly="True"
+				         VisibleIndex="0"
+				         Width="20.1083 mm">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IColumn>
+				<IColumn Caption="Пункт маршрута"
+				         DataMember="Point"
+				         DisplayFormat=""
+				         DisplayMember="Mnemo"
+				         Id="m_Column1"
+				         MinWidth="5.0271 mm"
+				         Name="m_Column1"
+				         ReadOnly="True"
+				         VisibleIndex="1"
+				         Width="20.1083 mm">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IColumn>
+				<IColumn Caption="Дата прибытия"
+				         DataMember="ArrivalDate"
+				         DisplayFormat="d"
+				         Id="m_Column2"
+				         MinWidth="5.0271 mm"
+				         Name="m_Column2"
+				         ReadOnly="True"
+				         VisibleIndex="2"
+				         Width="20.1083 mm">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IColumn>
+				<IColumn Caption="Дата убытия"
+				         DataMember="DepartureDate"
+				         DisplayFormat="d"
+				         Id="m_Column3"
+				         MinWidth="5.0271 mm"
+				         Name="m_Column3"
+				         ReadOnly="True"
+				         VisibleIndex="3"
+				         Width="20.1083 mm">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IColumn>
+				<IColumn Caption="Процент износа"
+				         DataMember="Wear"
+				         DisplayFormat="f2"
+				         Id="m_Column4"
+				         MinWidth="5.0271 mm"
+				         Name="m_Column4"
+				         ReadOnly="True"
+				         VisibleIndex="4"
+				         Width="20.1083 mm">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IColumn>
+			</Columns>
+			<ColumnSpan z:owner="LayoutManager5">1</ColumnSpan>
+			<ContextMenu z:owner="m_ContextMenuProvider">m_ContextMenu</ContextMenu>
+			<Dock z:owner="LayoutManager5">Fill</Dock>
+			<Height z:owner="LayoutManager5">19.3146 mm</Height>
+			<Left z:owner="LayoutManager5">1.5875 mm</Left>
+			<RowSpan z:owner="LayoutManager5">1</RowSpan>
+			<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+			<Top z:owner="LayoutManager5">5.8208 mm</Top>
+			<Width z:owner="LayoutManager5">116.1521 mm</Width>
+		</IGrid>
+	</IGroupBox>
+	<IBindingProvider Id="m_BindingProvider" />
+	<IContextMenuProvider Id="m_ContextMenuProvider">
+		<IContextMenu Enabled="True"
+		              Id="m_ContextMenu">
+			<BindKey z:owner="m_BindingProvider"></BindKey>
+			<Items z:owner="m_ContextMenu">
+				<IMenuItem Enabled="True"
+				           Id="m_MenuItem"
+				           Text="Добавить…">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<Items z:owner="m_MenuItem" />
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					<TransitionName z:owner="m_UnitLinker">AddBreakPoint@EditWaybill</TransitionName>
+				</IMenuItem>
+				<IMenuItem Enabled="True"
+				           Id="m_MenuItem1"
+				           Text="Изменить…">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<Items z:owner="m_MenuItem1" />
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					<TransitionName z:owner="m_UnitLinker">EditBreakPoint@EditWaybill</TransitionName>
+				</IMenuItem>
+				<IMenuItem Enabled="True"
+				           Id="m_MenuItem2"
+				           Text="Размножить…">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<Items z:owner="m_MenuItem2" />
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					<TransitionName z:owner="m_UnitLinker">CloneBreakPoint@EditWaybill</TransitionName>
+				</IMenuItem>
+				<IMenuItem Enabled="True"
+				           Id="m_MenuItem3"
+				           Text="-">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<Items z:owner="m_MenuItem3" />
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+				</IMenuItem>
+				<IMenuItem Enabled="True"
+				           Id="m_MenuItem4"
+				           Text="Удалить">
+					<BindKey z:owner="m_BindingProvider"></BindKey>
+					<Items z:owner="m_MenuItem4" />
+					<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					<TransitionName z:owner="m_UnitLinker">DeleteBreakPoint@EditWaybill</TransitionName>
+				</IMenuItem>
+			</Items>
+			<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		</IContextMenu>
+	</IContextMenuProvider>
+	<tornado:IUnitLinker Id="m_UnitLinker">
+		<tornado:Transitions z:owner="m_UnitLinker">
+			<tornado:IUnitLinkerTransition Id="m_UnitLinkerTransition"
+			                               Name="DeleteBreakPoint@EditWaybill">
+				<tornado:BindKey z:owner="m_BindingProvider"></tornado:BindKey>
+				<tornado:CurrentTransitionSelectionSource z:owner="m_UnitLinkerTransition">
+					<tornado:TransitionSelectionSource Grid="m_Grid"
+					                                   SourceType="Grid" />
+				</tornado:CurrentTransitionSelectionSource>
+				<tornado:ParentTransitionSelectionSource z:owner="m_UnitLinkerTransition">
+					<tornado:TransitionSelectionSource />
+				</tornado:ParentTransitionSelectionSource>
+				<tornado:SelectedObjectContext z:owner="m_BindingProvider"></tornado:SelectedObjectContext>
+			</tornado:IUnitLinkerTransition>
+			<tornado:IUnitLinkerTransition Id="m_UnitLinkerTransition1"
+			                               Name="AddBreakPoint@EditWaybill">
+				<tornado:BindKey z:owner="m_BindingProvider"></tornado:BindKey>
+				<tornado:CurrentTransitionSelectionSource z:owner="m_UnitLinkerTransition1">
+					<tornado:TransitionSelectionSource Grid="m_Grid"
+					                                   SourceType="Grid" />
+				</tornado:CurrentTransitionSelectionSource>
+				<tornado:ParentTransitionSelectionSource z:owner="m_UnitLinkerTransition1">
+					<tornado:TransitionSelectionSource />
+				</tornado:ParentTransitionSelectionSource>
+				<tornado:SelectedObjectContext z:owner="m_BindingProvider"></tornado:SelectedObjectContext>
+			</tornado:IUnitLinkerTransition>
+			<tornado:IUnitLinkerTransition Id="m_UnitLinkerTransition2"
+			                               Name="EditBreakPoint@EditWaybill">
+				<tornado:BindKey z:owner="m_BindingProvider"></tornado:BindKey>
+				<tornado:CurrentTransitionSelectionSource z:owner="m_UnitLinkerTransition2">
+					<tornado:TransitionSelectionSource Grid="m_Grid"
+					                                   SourceType="Grid" />
+				</tornado:CurrentTransitionSelectionSource>
+				<tornado:ParentTransitionSelectionSource z:owner="m_UnitLinkerTransition2">
+					<tornado:TransitionSelectionSource />
+				</tornado:ParentTransitionSelectionSource>
+				<tornado:SelectedObjectContext z:owner="m_BindingProvider"></tornado:SelectedObjectContext>
+			</tornado:IUnitLinkerTransition>
+			<tornado:IUnitLinkerTransition Id="m_UnitLinkerTransition3"
+			                               Name="CloneBreakPoint@EditWaybill">
+				<tornado:BindKey z:owner="m_BindingProvider"></tornado:BindKey>
+				<tornado:CurrentTransitionSelectionSource z:owner="m_UnitLinkerTransition3">
+					<tornado:TransitionSelectionSource Grid="m_Grid"
+					                                   SourceType="Grid" />
+				</tornado:CurrentTransitionSelectionSource>
+				<tornado:ParentTransitionSelectionSource z:owner="m_UnitLinkerTransition3">
+					<tornado:TransitionSelectionSource />
+				</tornado:ParentTransitionSelectionSource>
+				<tornado:SelectedObjectContext z:owner="m_BindingProvider"></tornado:SelectedObjectContext>
+			</tornado:IUnitLinkerTransition>
+		</tornado:Transitions>
+	</tornado:IUnitLinker>
+</IForm>

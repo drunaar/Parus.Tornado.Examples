@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitBackMetadataComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                            Id="Загрузчик пунктов маршрута"
+                            Name="Загрузчик пунктов маршрута" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
+	<BusinessOperations z:owner="Загрузчик пунктов маршрута">
+		<IBusinessOperationComponent DisplayName="Проверка"
+		                             Id="fe32b38a-6ea8-4082-85b2-5ba8674d8b55"
+		                             Identifier="fe32b38a-6ea8-4082-85b2-5ba8674d8b55">
+			<OperationTargets z:owner="fe32b38a-6ea8-4082-85b2-5ba8674d8b55">
+				<IUnitBackClassComponent ClassId="f8831fa9-9fc1-4083-9536-b11dbe31a06b"
+				                         Id="fe32b38a-6ea8-4082-85b2-5ba8674d8b55-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+					<CrudPorts z:owner="fe32b38a-6ea8-4082-85b2-5ba8674d8b55-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="fe32b38a-6ea8-4082-85b2-5ba8674d8b55-f8831fa9-9fc1-4083-9536-b11dbe31a06b-Create" />
+					</CrudPorts>
+					<MethodPorts z:owner="fe32b38a-6ea8-4082-85b2-5ba8674d8b55-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+						<IClassMethodPortComponent Id="fe32b38a-6ea8-4082-85b2-5ba8674d8b55-f8831fa9-9fc1-4083-9536-b11dbe31a06b-34751b45-2bca-48ab-85e5-a75948b71b48"
+						                           MethodId="34751b45-2bca-48ab-85e5-a75948b71b48" />
+					</MethodPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Загрузка"
+		                             Id="fa49272d-8626-4df0-875f-ae13dc463570"
+		                             Identifier="fa49272d-8626-4df0-875f-ae13dc463570">
+			<OperationTargets z:owner="fa49272d-8626-4df0-875f-ae13dc463570">
+				<IUnitBackClassComponent ClassId="f8831fa9-9fc1-4083-9536-b11dbe31a06b"
+				                         Id="fa49272d-8626-4df0-875f-ae13dc463570-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+					<CrudPorts z:owner="fa49272d-8626-4df0-875f-ae13dc463570-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="fa49272d-8626-4df0-875f-ae13dc463570-f8831fa9-9fc1-4083-9536-b11dbe31a06b-Create" />
+					</CrudPorts>
+					<MethodPorts z:owner="fa49272d-8626-4df0-875f-ae13dc463570-f8831fa9-9fc1-4083-9536-b11dbe31a06b">
+						<IClassMethodPortComponent Id="fa49272d-8626-4df0-875f-ae13dc463570-f8831fa9-9fc1-4083-9536-b11dbe31a06b-e2e0eb84-9f00-4a96-a3b7-6e11346e24b0"
+						                           MethodId="e2e0eb84-9f00-4a96-a3b7-6e11346e24b0" />
+					</MethodPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+	</BusinessOperations>
+</IUnitBackMetadataComponent>

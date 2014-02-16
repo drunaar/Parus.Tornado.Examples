@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+       Id="m_FileUploaderForm"
+       MinSize="76.7292 mm; 7.1438 mm"
+       Size="76.7292 mm; 7.1438 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<Layout z:owner="LayoutManager">LayoutManager2</Layout>
+	<LayoutManager z:owner="m_FileUploaderForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<IAbsolutePositionLayout Id="LayoutManager2" />
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager2">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<IFileUploader Filter=""
+	               Id="m_FileUploader"
+	               TabIndex="0"
+	               TabStop="True"
+	               ValueChanged="ValueChangedEventHandler">
+		<Anchor z:owner="LayoutManager2">Top, Left</Anchor>
+		<Dock z:owner="LayoutManager2">Fill</Dock>
+		<Height z:owner="LayoutManager2">6.6146 mm</Height>
+		<Left z:owner="LayoutManager2">0.0 mm</Left>
+		<Top z:owner="LayoutManager2">0.0 mm</Top>
+		<Width z:owner="LayoutManager2">76.7292 mm</Width>
+	</IFileUploader>
+</IForm>

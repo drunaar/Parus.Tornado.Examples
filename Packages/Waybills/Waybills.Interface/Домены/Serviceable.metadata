@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="78ab38b7-0355-4e20-8c18-4f935ec17fdf" name="Acme.Business.Waybills.Serviceable" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Годность к эксплуатации</Description>
+  <DataType value="Boolean" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

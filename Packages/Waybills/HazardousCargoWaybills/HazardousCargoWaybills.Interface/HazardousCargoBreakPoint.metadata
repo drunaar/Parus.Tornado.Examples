@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="0fe2c2c9-661b-462b-9f23-c4bdeddfa746" name="Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoBreakPoint" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Остановка для опасных грузов</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass ref-name="Acme.Business.Waybills.BreakPoint" />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="5c04ae28-bd62-4d9b-bd14-5876dbe70dfc" name="Inspector">
+      <Description>Проверяющий</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Name" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass ref-name="Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill" />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters>
+        <ClassCreateMethodParameter id="f5b5cb3c-34da-4c59-b41c-312b9d82e0ab" name="master">
+          <ParameterType>Acme.Business.Waybills.HazardousCargoWaybills.IHazardousCargoWaybill</ParameterType>
+          <Nullable>False</Nullable>
+        </ClassCreateMethodParameter>
+      </ClassCreateMethodParameters>
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

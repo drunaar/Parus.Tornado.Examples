@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="ProjTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f921bee7-a876-43df-91af-3067be05b64f}</ProjectGuid>
+    <PkgTargetsFile>pkg.targets</PkgTargetsFile>
+    <CompilerPath>
+    </CompilerPath>
+    <PackName>WayPointsLoader</PackName>
+    <PackDescription>Загрузчик пунктов маршрута</PackDescription>
+    <PackVersion>1.0.0.0</PackVersion>
+    <PackGuid>{19abba56-80bc-4cab-980e-952b25cd1336}</PackGuid>
+    <PkgRelativePath>..\..\..\..\Target\BusinessLib\Waybills\</PkgRelativePath>
+    <PkgFile>WayPointsLoader.pkg</PkgFile>
+    <PkgbuildRelativePath>
+    </PkgbuildRelativePath>
+    <PkgbuildFile>WayPointsLoader.Pkg.pkgbuild</PkgbuildFile>
+    <KeyFile>parus.Develop.Private.ppk</KeyFile>
+    <KeyRelativePath>..\..\..\..\Parus\Key\</KeyRelativePath>
+    <BusinessLibDir>..\..\..\..\Target\BusinessLib\Waybills\</BusinessLibDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Tornado\$(PkgTargetsFile)" />
+  <Target Name="CoreCompile" />
+  <Target Name="CopyFilesToOutputDirectory" />
+  <Target Name="ProjTarget">
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="PkgTarget" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <Name>WayPointsLoader.Pkg</Name>
+    <RootNamespace>WayPointsLoader.Pkg</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AdditionalPkgRelativeDir>..\..\..\..\Target\Server\packs\</AdditionalPkgRelativeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ExtCont Include="Ext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PkgCont Include="Pkg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <CsCont Include="Cs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PkgFile Include="..\..\..\..\Parus\TornadoLib\s7support.pkg" />
+    <PkgFile Include="..\..\..\..\Parus\TornadoLib\syspackage.pkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Waybills.Pkg\Waybills.Pkg.pkgproj">
+      <Project>81195778-9b8c-44c6-bc57-3bfc41e7094c</Project>
+      <Name>Waybills.Pkg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WayPointsLoader.Client\WayPointsLoader.Client.csproj">
+      <Project>2dddfc69-a357-4151-9c66-29a58a83e7f6</Project>
+      <Name>WayPointsLoader.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WayPointsLoader.Interface\WayPointsLoader.Interface.csproj">
+      <Project>3dba115f-90fc-40c6-a312-e1debefd1517</Project>
+      <Name>WayPointsLoader.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WayPointsLoader.Server\WayPointsLoader.Server.csproj">
+      <Project>6d8cfd33-6730-4671-9531-e80c75baddbe</Project>
+      <Name>WayPointsLoader.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Ext Include="WayPointsLoader.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="WayPointsLoader.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="WayPointsLoader.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="WayPointsLoader.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+  </ItemGroup>
+  <ItemGroup>
+    <ItemExtFile Include=".\LinkUnitInfo.InitData.linkunit">
+      <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
+    </ItemExtFile>
+  </ItemGroup>
+</Project>

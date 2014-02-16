@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="260b1624-8bec-419a-a067-537bed61e727" name="Acme.Business.Waybills.ConveyanceDeedSevice" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>False</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassMethods>
+    <ClassMethod id="6418a412-4073-44b0-a230-644f75fdf638" name="GetLink">
+      <BeginTransaction>True</BeginTransaction>
+      <ReturnType>Parus.Net.Server.IObjectLink</ReturnType>
+      <ClassMethodParameters>
+        <ClassMethodParameter id="80da49f7-cb70-48ce-89b3-81a33bd3aed7" name="obj">
+          <ParameterKind value="Normal" />
+          <ParameterType>object</ParameterType>
+        </ClassMethodParameter>
+      </ClassMethodParameters>
+    </ClassMethod>
+    <ClassMethod id="a56a1388-0e42-4d17-939c-97578554cce0" name="Link">
+      <BeginTransaction>True</BeginTransaction>
+      <ReturnType>
+      </ReturnType>
+      <ClassMethodParameters>
+        <ClassMethodParameter id="152038bb-65a7-4c90-ba23-3d753bfa70f2" name="source">
+          <ParameterKind value="Normal" />
+          <ParameterType>Acme.Business.Waybills.IWaybill</ParameterType>
+        </ClassMethodParameter>
+        <ClassMethodParameter id="cd451d36-bb92-440d-85fd-76a25742b7e2" name="target">
+          <ParameterKind value="Normal" />
+          <ParameterType>Acme.Business.Waybills.IConveyanceDeed</ParameterType>
+        </ClassMethodParameter>
+      </ClassMethodParameters>
+    </ClassMethod>
+    <ClassMethod id="376adaa6-e1fc-4f6c-8492-1ebf200859c4" name="Unlink">
+      <BeginTransaction>True</BeginTransaction>
+      <ReturnType>
+      </ReturnType>
+      <ClassMethodParameters>
+        <ClassMethodParameter id="17ef4513-f4f5-4e55-867f-57963645e9df" name="obj">
+          <ParameterKind value="Normal" />
+          <ParameterType>object</ParameterType>
+        </ClassMethodParameter>
+      </ClassMethodParameters>
+    </ClassMethod>
+  </ClassMethods>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

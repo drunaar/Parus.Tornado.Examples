@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="ProjTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eb79dba6-aab4-4235-97a3-ff33fca19699}</ProjectGuid>
+    <PkgTargetsFile>pkg.targets</PkgTargetsFile>
+    <CompilerPath>
+    </CompilerPath>
+    <PackName>PerishablesWaybills</PackName>
+    <PackDescription>Путевые листы для скоропортящихся грузов</PackDescription>
+    <PackVersion>1.0.0.0</PackVersion>
+    <PackGuid>{978de5e9-0f25-47bf-915e-9ecda55b0b2c}</PackGuid>
+    <PkgRelativePath>..\..\..\..\Target\BusinessLib\Waybills\</PkgRelativePath>
+    <PkgFile>PerishablesWaybills.pkg</PkgFile>
+    <PkgbuildRelativePath>
+    </PkgbuildRelativePath>
+    <PkgbuildFile>PerishablesWaybills.Pkg.pkgbuild</PkgbuildFile>
+    <KeyFile>parus.Develop.Private.ppk</KeyFile>
+    <KeyRelativePath>..\..\..\..\Parus\Key\</KeyRelativePath>
+    <BusinessLibDir>..\..\..\..\Target\BusinessLib\Waybills\</BusinessLibDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Tornado\$(PkgTargetsFile)" />
+  <Target Name="CoreCompile" />
+  <Target Name="CopyFilesToOutputDirectory" />
+  <Target Name="ProjTarget">
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="PkgTarget" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <Name>PerishablesWaybills.Pkg</Name>
+    <RootNamespace>PerishablesWaybills.Pkg</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AdditionalPkgRelativeDir>..\..\..\..\Target\Server\packs\</AdditionalPkgRelativeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ExtCont Include="Ext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PkgCont Include="Pkg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <CsCont Include="Cs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PkgFile Include="..\..\..\..\Parus\TornadoLib\s7support.pkg" />
+    <PkgFile Include="..\..\..\..\Parus\TornadoLib\syspackage.pkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Waybills.Pkg\Waybills.Pkg.pkgproj">
+      <Project>81195778-9b8c-44c6-bc57-3bfc41e7094c</Project>
+      <Name>Waybills.Pkg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerishablesWaybills.Client\PerishablesWaybills.Client.csproj">
+      <Project>398558cd-ad44-4296-ac10-31d730fdc075</Project>
+      <Name>PerishablesWaybills.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerishablesWaybills.Interface\PerishablesWaybills.Interface.csproj">
+      <Project>0039d902-6896-48bd-8c01-a9358198cadb</Project>
+      <Name>PerishablesWaybills.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerishablesWaybills.Server\PerishablesWaybills.Server.csproj">
+      <Project>8aa1d693-6fbe-4486-b96d-e4c4e1fe5657</Project>
+      <Name>PerishablesWaybills.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Ext Include="PerishablesWaybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="PerishablesWaybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="PerishablesWaybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="PerishablesWaybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="PerishablesWaybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+  </ItemGroup>
+  <ItemGroup>
+    <ItemExtFile Include=".\Workplace.InitData.xml">
+      <ExtFullName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</ExtFullName>
+    </ItemExtFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ItemExtFile Include="PerishablesWaybills.Client.linkunit">
+      <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
+    </ItemExtFile>
+  </ItemGroup>
+</Project>

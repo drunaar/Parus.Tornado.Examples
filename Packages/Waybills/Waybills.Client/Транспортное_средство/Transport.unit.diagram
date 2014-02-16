@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unitModelDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Transport">
+  <unitModelMoniker name="/Acme.Business.Waybills.Transport" />
+  <nestedChildShapes>
+    <dataRetrievePointShape Id="89e6eb27-56cb-488f-8bf3-e4efb7641add" absoluteBounds="1.875, 2.75, 2, 0.5">
+      <dataRetrievePointModelMoniker name="/Acme.Business.Waybills.Transport/Data" />
+    </dataRetrievePointShape>
+    <startPointShape Id="35ae0fdb-6732-416a-952a-936760f69626" absoluteBounds="0.5, 0.75, 0.25, 0.25">
+      <startPointModelMoniker name="/Acme.Business.Waybills.Transport/Start" />
+      <relativeChildShapes />
+    </startPointShape>
+    <interactionPointShape Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" absoluteBounds="1.875, 0.5, 2, 2.125">
+      <interactionPointModelMoniker name="/Acme.Business.Waybills.Transport/Browse" />
+    </interactionPointShape>
+    <interactionPointShape Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" absoluteBounds="6, 0.5, 1.5, 1.875">
+      <interactionPointModelMoniker name="/Acme.Business.Waybills.Transport/Edit" />
+    </interactionPointShape>
+    <endPointShape Id="70293568-5e91-406b-9b09-ee4098c2037f" absoluteBounds="5, 2.25, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.Transport/Browse.Delete.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="213e7d3c-10c6-4eb4-912b-a3d64cefd029" absoluteBounds="8.5, 0.75, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.Transport/Edit.Ok.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="b3357482-76d4-40b5-aa24-0c98867da6f9" absoluteBounds="8.5, 1.625, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.Transport/Edit.Cancel.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <graphConnector edgePoints="[(0.75 : 0.875); (1.875 : 0.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Start/Initialize@Start" />
+      <relativeChildShapes />
+      <nodes>
+        <startPointShapeMoniker Id="35ae0fdb-6732-416a-952a-936760f69626" />
+        <interactionPointShapeMoniker Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.875 : 1.84735514423077); (6 : 1.84735514423077)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Browse/Add@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" />
+        <interactionPointShapeMoniker Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.875 : 0.87860514423077); (6 : 0.87860514423077)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Browse/Edit@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" />
+        <interactionPointShapeMoniker Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.875 : 1.36298014423077); (6 : 1.36298014423077)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Browse/Clone@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" />
+        <interactionPointShapeMoniker Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.875 : 2.375); (5 : 2.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Browse/Delete@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="5c46cd63-cc63-450f-89fe-bc85a16bebba" />
+        <endPointShapeMoniker Id="70293568-5e91-406b-9b09-ee4098c2037f" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(7.5 : 0.875); (8.5 : 0.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Edit/Ok@Edit" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" />
+        <endPointShapeMoniker Id="213e7d3c-10c6-4eb4-912b-a3d64cefd029" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(7.5 : 1.75); (8.5 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.Transport/Edit/Cancel@Edit" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="e1a569ec-d33a-46e9-b98d-aad725807ce5" />
+        <endPointShapeMoniker Id="b3357482-76d4-40b5-aa24-0c98867da6f9" />
+      </nodes>
+    </graphConnector>
+  </nestedChildShapes>
+</unitModelDiagram>

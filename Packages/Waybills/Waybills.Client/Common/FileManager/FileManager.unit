@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitMetadataComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                         xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado"
+                        DisplayName="Менеджер файлов"
+                        ElementId="3e7a7138-a745-4784-977a-f9282575fabd"
+                        Id="FileManager"
+                        ImageUri="tornado://resource/SmartClient.Tornado/Parus.SmartClient.Tornado.Images.Unit32.png"
+                        Name="FileManager" xmlns="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado">
+	<DataRetrievePoints z:owner="FileManager" />
+	<GraphPoints z:owner="FileManager">
+		<IStartPointComponent DataType=""
+		                      Description="Стартовая точка загрузки файла."
+		                      DisplayName="Загрузка файла"
+		                      ElementId="ca5c63f0-48d2-4a68-bbfc-3bec6de26c05"
+		                      Id="Upload"
+		                      Name="Upload"
+		                      Type="None">
+			<Transitions z:owner="Upload">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Инициализация загрузки файла"
+				                          ElementId="b7ab4c1c-1375-41d1-98a2-f628ce27741e"
+				                          Id="Init@Upload"
+				                          Name="Init@Upload"
+				                          Target="UploadForm"
+				                          Transited="InitUploadEventHandler" />
+			</Transitions>
+		</IStartPointComponent>
+		<IInteractionPointComponent Description="Диалог выбора файла для загрузки"
+		                            DisplayName="Загрузка файла"
+		                            ElementId="85e93f64-e630-4cbe-87af-48ef24821b80"
+		                            FormProvider="ModificationFormTemplate"
+		                            Id="UploadForm"
+		                            Name="UploadForm">
+			<FormProviderParams z:owner="UploadForm">
+				<tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.FileUploaderForm, Waybills.Client" />
+			</FormProviderParams>
+			<Transitions z:owner="UploadForm">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Файл выбран"
+				                          DisplayName="Unit Transition 1"
+				                          ElementId="4c0cea60-6721-475f-a97a-612ceca01087"
+				                          Id="Ok@UploadForm"
+				                          Name="Ok@UploadForm"
+				                          Role="OK"
+				                          Target="Upload.Ok"
+				                          Transited="Upload_TransitedEventHandler" />
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Отмена выбора файла"
+				                          DisplayName="Unit Transition 2"
+				                          ElementId="ee46c528-a619-44da-bb96-de5fc6f47685"
+				                          Id="Cancel@UploadForm"
+				                          Name="Cancel@UploadForm"
+				                          Role="Cancel"
+				                          Target="Upload.Cancel" />
+			</Transitions>
+		</IInteractionPointComponent>
+		<IEndPointComponent Description="Конец выбора файла для загрузки"
+		                    ElementId="45c655d1-ff4f-4bb8-8423-4360cb825a89"
+		                    Id="Upload.Cancel"
+		                    Name="Upload.Cancel" />
+		<IEndPointComponent Description="Конец выбора файла для загрузки"
+		                    ElementId="6e5628f6-7f06-44f9-a6e9-3b0fc0458943"
+		                    Id="Upload.Ok"
+		                    Name="Upload.Ok" />
+		<IStartPointComponent DataType=""
+		                      Description="Стартовая точка выгрузки файлов."
+		                      DisplayName="Выгрузка файлов"
+		                      ElementId="2cdc7279-f477-4208-b389-5b2535af2b80"
+		                      Id="Download"
+		                      Name="Download"
+		                      Type="None">
+			<Transitions z:owner="Download">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Инициализация выгрузки файлов"
+				                          ElementId="b787a6d4-9b84-43f1-ac07-85da0e8ef669"
+				                          Id="Init@Download"
+				                          Name="Init@Download"
+				                          Target="DownloadForm" />
+			</Transitions>
+		</IStartPointComponent>
+		<IInteractionPointComponent Description="Диалог выгрузки файлов"
+		                            DisplayName="Выгрузка файла"
+		                            ElementId="9be6bf22-0b68-4b41-8078-d3a6744bd9e1"
+		                            FormProvider="ActionFormTemplate"
+		                            Id="DownloadForm"
+		                            Name="DownloadForm">
+			<FormProviderParams z:owner="DownloadForm">
+				<tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.FileDownloaderForm, Waybills.Client" />
+			</FormProviderParams>
+			<Transitions z:owner="DownloadForm">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Закрытие формы"
+				                          ElementId="c68f4347-336a-4673-a9a0-1001e83094fb"
+				                          Id="Close"
+				                          Name="Close"
+				                          Role="OK"
+				                          Target="EndPoint" />
+			</Transitions>
+		</IInteractionPointComponent>
+		<IEndPointComponent ElementId="511a7574-3145-438c-aba4-cff61183a5e7"
+		                    Id="EndPoint"
+		                    Name="EndPoint" />
+	</GraphPoints>
+</IUnitMetadataComponent>

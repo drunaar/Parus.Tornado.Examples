@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B31BBE80-0E26-436B-8E11-0AA1ACAE87E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Acme.Business.Waybills</RootNamespace>
+    <AssemblyName>Waybills.Client</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Waybills.Client.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppServer.ClientModel, Version=1.0.7381.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="AppServer.Tornado.ClientModel, Version=1.2.8366.0, Culture=neutral, PublicKeyToken=940077e7c5496bc8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ParusCommon, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="R.SAT-Common, Version=1.0.7401.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="R.SAT-Model, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SmartClient.Common, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SmartClient.Model, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SmartClient.Model.Tornado, Version=1.0.7381.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SmartClient.Tornado, Version=1.0.7381.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zml.Core, Version=1.0.7381.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AutoNumberHelper.cs" />
+    <Compile Include="Common\FileManager\FileDownloaderForm.cs">
+      <DependentUpon>FileDownloaderForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FileManager\FileManager.cs">
+      <DependentUpon>FileManager.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FileManager\FileManagerPartial.cs">
+      <DependentUpon>FileManager.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FileManager\FileUploaderForm.cs">
+      <DependentUpon>FileUploaderForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FileManager\UploadMonitor.cs" />
+    <Compile Include="Common\FileManager\IUploadMonitor.cs" />
+    <Compile Include="Common\MnemoNameEditForm.cs">
+      <DependentUpon>MnemoNameEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PictureEditForm.cs">
+      <DependentUpon>PictureEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UnitHelper.cs" />
+    <Compile Include="Акт_передачи\ConveyanceDeed.cs">
+      <DependentUpon>ConveyanceDeed.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Акт_передачи\ConveyanceDeedEditForm.cs">
+      <DependentUpon>ConveyanceDeedEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Акт_передачи\ConveyanceDeedEditFormPartial.cs">
+      <DependentUpon>ConveyanceDeedEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Акт_передачи\ConveyanceDeedPartial.cs">
+      <DependentUpon>ConveyanceDeed.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Пункт_маршрута\WayPointPartial.cs">
+      <DependentUpon>WayPoint.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Путевой_лист\WaybillHeaderEditForm.cs">
+      <DependentUpon>WaybillHeaderEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Пункт_маршрута\WayPoint.cs">
+      <DependentUpon>WayPoint.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Пункт_маршрута\WayPointEditForm.cs">
+      <DependentUpon>WayPointEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Пункт_маршрута\WayPointViewForm.cs">
+      <DependentUpon>WayPointViewForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Путевой_лист\BreakPointEditForm.cs">
+      <DependentUpon>BreakPointEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Путевой_лист\Waybill.cs">
+      <DependentUpon>Waybill.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Путевой_лист\WaybillEditForm.cs">
+      <DependentUpon>WaybillEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Путевой_лист\WaybillPartial.cs">
+      <DependentUpon>Waybill.unit</DependentUpon>
+    </Compile>
+    <Compile Include="Транспортное_средство\Transport.cs">
+      <DependentUpon>Transport.unit</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Транспортное_средство\TransportEditForm.cs">
+      <DependentUpon>TransportEditForm.zml</DependentUpon>
+    </Compile>
+    <Compile Include="Транспортное_средство\TransportPartial.cs">
+      <DependentUpon>Transport.unit</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Waybills.Interface\Waybills.Interface.csproj">
+      <Project>{E9FDA3DC-0320-4222-81BA-E14889782409}</Project>
+      <Name>Waybills.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Транспортное_средство\TransportEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\MnemoNameEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\PictureEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FileManager\FileUploaderForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FileManager\FileDownloaderForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FileManager\FileManager.unit" />
+    <EmbeddedResource Include="Транспортное_средство\Transport.unit" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Пункт_маршрута\WayPoint.unit" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Пункт_маршрута\WayPointEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Пункт_маршрута\WayPointViewForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Путевой_лист\Waybill.unit" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Путевой_лист\WaybillEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Путевой_лист\BreakPointEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Путевой_лист\WaybillHeaderEditForm.zml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Транспортное_средство\TransportBackend.unitback" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Пункт_маршрута\WayPointBackend.unitback" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Путевой_лист\WaybillBackend.unitback" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Акт_передачи\ConveyanceDeed.unit" />
+    <None Include="Акт_передачи\ConveyanceDeed.unit.diagram">
+      <DependentUpon>ConveyanceDeed.unit</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Акт_передачи\ConveyanceDeedEditForm.zml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

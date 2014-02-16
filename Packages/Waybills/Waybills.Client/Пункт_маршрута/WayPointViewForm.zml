@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+       Id="m_WayPointViewForm"
+       Size="70.1146 mm; 39.9521 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<Layout z:owner="LayoutManager">LayoutManager2</Layout>
+	<LayoutManager z:owner="m_WayPointViewForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<IAbsolutePositionLayout Id="LayoutManager2" />
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager2">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<IFormSocket Enabled="False"
+	             FormClass="Acme.Business.Waybills.WayPointEditForm, Waybills.Client"
+	             Id="m_FormSocket"
+	             TabIndex="0"
+	             TabStop="False"
+	             UseDataSource="False">
+		<Anchor z:owner="LayoutManager2">Top, Left</Anchor>
+		<Dock z:owner="LayoutManager2">Fill</Dock>
+		<Height z:owner="LayoutManager2">39.9521 mm</Height>
+		<Left z:owner="LayoutManager2">0.0 mm</Left>
+		<Top z:owner="LayoutManager2">0.0 mm</Top>
+		<Width z:owner="LayoutManager2">70.1146 mm</Width>
+	</IFormSocket>
+</IForm>

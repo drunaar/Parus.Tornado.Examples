@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="660cde7e-d4f8-482b-9cf6-f1adbd08a104" name="Acme.Business.Waybills.Note" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Примечание</Description>
+  <DataType value="Text" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

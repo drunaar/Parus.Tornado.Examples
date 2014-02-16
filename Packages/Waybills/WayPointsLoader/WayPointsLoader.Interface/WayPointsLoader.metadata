@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="f8831fa9-9fc1-4083-9536-b11dbe31a06b" name="Acme.Business.Waybills.WayPointsLoader.WayPointsLoader" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Сервис загрузки классификатора пунктов маршрута</Description>
+  <LifeTime value="SingleCall" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>False</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassMethods>
+    <ClassMethod id="e2e0eb84-9f00-4a96-a3b7-6e11346e24b0" name="SaveData">
+      <Description>Сохранить данные</Description>
+      <BeginTransaction>True</BeginTransaction>
+      <ReturnType>System.Data.DataTable</ReturnType>
+      <ClassMethodParameters>
+        <ClassMethodParameter id="db929c8c-5280-4880-aaf5-74fbcd6ac908" name="data">
+          <Description>Импортируемые данные</Description>
+          <ParameterKind value="Normal" />
+          <ParameterType>System.Data.DataTable</ParameterType>
+        </ClassMethodParameter>
+      </ClassMethodParameters>
+    </ClassMethod>
+    <ClassMethod id="34751b45-2bca-48ab-85e5-a75948b71b48" name="CheckData">
+      <Description>Проверить данные</Description>
+      <BeginTransaction>True</BeginTransaction>
+      <ReturnType>System.Data.DataTable</ReturnType>
+      <ClassMethodParameters>
+        <ClassMethodParameter id="4e34c8c3-517a-413e-89de-f8c3b0ede0f1" name="data">
+          <ParameterKind value="Normal" />
+          <ParameterType>System.Data.DataTable</ParameterType>
+        </ClassMethodParameter>
+      </ClassMethodParameters>
+    </ClassMethod>
+  </ClassMethods>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

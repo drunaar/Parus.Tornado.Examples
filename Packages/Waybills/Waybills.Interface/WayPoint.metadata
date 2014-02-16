@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="e2d54cc4-950a-4ab7-ab95-e751e92871e2" name="Acme.Business.Waybills.WayPoint" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Пункт маршрута</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="b0c230d1-b443-49c9-92e1-8c6aacdf5e73" name="Mnemo">
+      <Description>Мнемокод пункта маршрута</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Mnemo" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="36b2cf12-c77a-4c07-9261-e9cf8dd1bd3a" name="Name">
+      <Description>Наименование пункта маршрута</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Name" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="671f6b0c-489f-48b1-8883-3c10ccd5bd7f" name="Note">
+      <Description>Примечание</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Note" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="f0da5045-6613-460c-8a39-61d4a1a0c5b6" name="ExtId">
+      <Description>Идентификатор по классификатору</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>False</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.GUID" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <ClassConstraints>
+    <ClassConstraint id="b6050bd9-ced9-4cea-b0e9-3c41fdc14342" name="ConstraintMnemo">
+      <Description>Ограничение на уникальность мнемокода</Description>
+      <ConstraintType value="Unique" />
+      <ClassConstraintAttributes>
+        <ClassConstraintAttribute id="97cb141e-c544-4002-b43b-81ea49fb3187" name="ConstraintAttributeMnemo">
+          <Description>Мнемокод</Description>
+          <RefClassPhysicalAttribute ref-name="Acme.Business.Waybills.WayPoint/Mnemo" />
+          <RefClassRefAttribute />
+          <ExactType>False</ExactType>
+        </ClassConstraintAttribute>
+      </ClassConstraintAttributes>
+    </ClassConstraint>
+    <ClassConstraint id="96cb8982-b98a-4ab8-bdbe-c7de7790b3d0" name="ConstraintName">
+      <Description>Ограничение на уникальность наименования</Description>
+      <ConstraintType value="Unique" />
+      <ClassConstraintAttributes>
+        <ClassConstraintAttribute id="8a0b0d48-c6de-4717-b731-78485b06bed3" name="ConstraintAttributeName">
+          <Description>Наименование</Description>
+          <RefClassPhysicalAttribute ref-name="Acme.Business.Waybills.WayPoint/Name" />
+          <RefClassRefAttribute />
+          <ExactType>False</ExactType>
+        </ClassConstraintAttribute>
+      </ClassConstraintAttributes>
+    </ClassConstraint>
+  </ClassConstraints>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

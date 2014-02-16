@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="dc58874d-37fa-4f87-aa9f-d1cd6ab2b55d" name="Acme.Business.Waybills.ConveyanceDeed" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Акт передачи груза</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="208bc805-e4f3-4467-9506-5425c15c6bfc" name="SourceName">
+      <Description>Груз сдал</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Name" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="f049d832-838c-4fe1-9d4a-12262d32abc3" name="TargetName">
+      <Description>Груз принял</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Name" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="ae116472-7837-4343-be5f-5ab7b3097fd9" name="Date">
+      <Description>Дата передачи</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Date" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

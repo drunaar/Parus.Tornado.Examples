@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="82dae575-4036-41ab-bf1b-6d9d3a607895" name="Acme.Business.Waybills.WayPointNumber" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Порядковый номер точки маршрута</Description>
+  <DataType value="Decimal" />
+  <Format>3.0</Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

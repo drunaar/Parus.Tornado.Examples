@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="4db7ef9e-2360-478a-9351-b7de1958babb" name="Acme.Business.Waybills.Mnemo" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Мнемокод</Description>
+  <DataType value="String" />
+  <Format>50</Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

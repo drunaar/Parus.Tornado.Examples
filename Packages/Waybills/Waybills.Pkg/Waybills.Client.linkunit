@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinkedUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.parus.com/Tornado/Deploy/LinkUnitsXsd.xsd">
+  <Link id="c79b54e3-9e49-4bc6-9931-60cd718cf0c8" displayname="Прикрепленные файлы" order="0" role="OK" host-type="Child">
+    <link-to>Acme.Business.Waybills.TransportUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Data</link-to-point-discriminant>
+    <call-unit>Parus.SmartClient.Tornado.AttachFilesUnitUnit, SmartClient.Tornado</call-unit>
+    <call-unit-point>Start</call-unit-point>
+    <post-refresh-strategy>None</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>OwnerObjectId</name>
+        <provider_type>FocusedRecoedId</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DataRow</name>
+        <provider_type>CurrentRecordData</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DisplaySettings</name>
+        <provider_type>BrowseFormColumns</provider_type>
+        <provider_arg />
+      </parameter>
+    </parameters>
+  </Link>
+  <Link id="c4d10f2d-e5de-454f-81ce-a2c676d718ef" displayname="Прикрепленные файлы" order="0" role="OK" host-type="Child">
+    <link-to>Acme.Business.Waybills.WayPointUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Data</link-to-point-discriminant>
+    <call-unit>Parus.SmartClient.Tornado.AttachFilesUnitUnit, SmartClient.Tornado</call-unit>
+    <call-unit-point>Start</call-unit-point>
+    <post-refresh-strategy>None</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>OwnerObjectId</name>
+        <provider_type>FocusedRecoedId</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DataRow</name>
+        <provider_type>CurrentRecordData</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DisplaySettings</name>
+        <provider_type>BrowseFormColumns</provider_type>
+        <provider_arg />
+      </parameter>
+    </parameters>
+  </Link>
+  <Link id="afa16b5e-8407-4609-ab22-6a34f2872702" displayname="Прикрепленные файлы" order="0" role="OK" host-type="Child">
+    <link-to>Acme.Business.Waybills.WaybillUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Waybill_Data</link-to-point-discriminant>
+    <call-unit>Parus.SmartClient.Tornado.AttachFilesUnitUnit, SmartClient.Tornado</call-unit>
+    <call-unit-point>Start</call-unit-point>
+    <post-refresh-strategy>None</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>OwnerObjectId</name>
+        <provider_type>FocusedRecoedId</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DataRow</name>
+        <provider_type>CurrentRecordData</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DisplaySettings</name>
+        <provider_type>BrowseFormColumns</provider_type>
+        <provider_arg />
+      </parameter>
+    </parameters>
+  </Link>
+  <Link id="f067d0ed-d576-4407-ac8c-cd6141145201" displayname="Прикрепленные файлы" order="0" role="OK" host-type="Child">
+    <link-to>Acme.Business.Waybills.WaybillUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>BreakPoint_Data</link-to-point-discriminant>
+    <call-unit>Parus.SmartClient.Tornado.AttachFilesUnitUnit, SmartClient.Tornado</call-unit>
+    <call-unit-point>Start</call-unit-point>
+    <post-refresh-strategy>None</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>OwnerObjectId</name>
+        <provider_type>FocusedRecoedId</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DataRow</name>
+        <provider_type>CurrentRecordData</provider_type>
+        <provider_arg />
+      </parameter>
+      <parameter>
+        <name>AttachFilesForm.DisplaySettings</name>
+        <provider_type>BrowseFormColumns</provider_type>
+        <provider_arg />
+      </parameter>
+    </parameters>
+  </Link>
+</LinkedUnits>

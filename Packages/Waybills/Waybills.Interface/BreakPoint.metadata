@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="7b4eb21d-95f6-48c8-9f97-0aacd4a31310" name="Acme.Business.Waybills.BreakPoint" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Точка остановки</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="5053361b-2135-4bcb-aa79-239c9d0a81b2" name="Number">
+      <Description>Порядковый номер точки остановки</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>False</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.WayPointNumber" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="a8a86616-147a-46f2-b71a-00efb309b22a" name="ArrivalDate">
+      <Description>Дата прибытия</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Date" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="f69456c8-3169-4fbf-8b8a-b65ecce29878" name="DepartureDate">
+      <Description>Дата убытия</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Date" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <ClassRefAttributes>
+    <ClassRefAttribute id="eccbea4d-ff37-4a02-b466-31b40c6173c6" name="Point">
+      <Description>Пункт маршрута</Description>
+      <LinkKind value="Using" />
+      <LinkRule value="None" />
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <RefClass ref-name="Acme.Business.Waybills.WayPoint" />
+    </ClassRefAttribute>
+  </ClassRefAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass ref-name="Acme.Business.Waybills.Waybill" />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters>
+        <ClassCreateMethodParameter id="868fb8e7-a39e-4bbc-93b8-0000f4431d38" name="master">
+          <ParameterType>Acme.Business.Waybills.IWaybill</ParameterType>
+          <Nullable>False</Nullable>
+        </ClassCreateMethodParameter>
+      </ClassCreateMethodParameters>
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinkedUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.parus.com/Tornado/Deploy/LinkUnitsXsd.xsd">
+  <Link id="59767c57-ed8c-4680-bfbc-b8f66556ad74" displayname="Загрузчик пунктов маршрутов" order="0" role="" host-type="Child">
+    <link-to>Acme.Business.Waybills.WayPointUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Data</link-to-point-discriminant>
+    <call-unit>Acme.Business.Waybills.WayPointsLoader.WayPointsLoaderUnit, WayPointsLoader.Client</call-unit>
+    <call-unit-point>Start</call-unit-point>
+    <post-refresh-strategy>Refresh</post-refresh-strategy>
+    <parameters/>
+  </Link>
+</LinkedUnits>

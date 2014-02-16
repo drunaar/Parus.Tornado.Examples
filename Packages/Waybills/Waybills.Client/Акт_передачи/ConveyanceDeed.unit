@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitMetadataComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                         xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado"
+                        DisplayName="Акты передачи груза"
+                        ElementId="72f55bb4-f32d-4c7d-9952-d8243dd7b786"
+                        Id="ConveyanceDeed"
+                        ImageUri="tornado://resource/SmartClient.Tornado/Parus.SmartClient.Tornado.Images.Unit32.png"
+                        Name="ConveyanceDeed" xmlns="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado">
+	<DataRetrievePoints z:owner="ConveyanceDeed" />
+	<GraphPoints z:owner="ConveyanceDeed">
+		<IStartPointComponent DataType=""
+		                      Description="Создать/Изменить акт передачи груза"
+		                      DisplayName="Создать/Изменить акт передачи груза"
+		                      ElementId="653b1ef3-f78d-42fc-924b-c857a8a49a90"
+		                      Id="StartEdit"
+		                      Name="StartEdit">
+			<Transitions z:owner="StartEdit">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Изменение"
+				                          ElementId="6e5ec24d-270c-44d1-b5c2-8eb2fdc2db0b"
+				                          Id="Edit@StartEdit"
+				                          Name="Edit@StartEdit"
+				                          Target="Edit"
+				                          TransactionAction="Begin"
+				                          Transited="Init_TransitedEventHandler" />
+			</Transitions>
+		</IStartPointComponent>
+		<IInteractionPointComponent Description="Форма редактирования"
+		                            DisplayName="Акт передачи груза"
+		                            ElementId="213ecbab-ca53-4cf0-8793-ee1e349380ea"
+		                            FormProvider="ModificationFormTemplate"
+		                            Id="Edit"
+		                            Name="Edit">
+			<FormProviderParams z:owner="Edit">
+				<tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.ConveyanceDeedEditForm, Waybills.Client" />
+			</FormProviderParams>
+			<Transitions z:owner="Edit">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Подтверждение изменений"
+				                          ElementId="d64145ab-ab87-4c13-8471-51fd6ae46aa9"
+				                          Id="Ok@Edit"
+				                          Name="Ok@Edit"
+				                          Role="OK"
+				                          Target="EndPoint"
+				                          TransactionAction="Commit"
+				                          Transiting="Commit_TransitingEventHandler" />
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Отмена изменений"
+				                          ElementId="3829664b-9ccc-47c4-ab9b-9bc7cb01bc46"
+				                          Id="Cancel@Edit"
+				                          Name="Cancel@Edit"
+				                          Role="Cancel"
+				                          Target="EndPoint1"
+				                          TransactionAction="Rollback" />
+			</Transitions>
+		</IInteractionPointComponent>
+		<IEndPointComponent ElementId="28911fbc-7e3e-418c-b43d-29ee3b02f41a"
+		                    Id="EndPoint"
+		                    Name="EndPoint" />
+		<IEndPointComponent ElementId="6a7bb0c5-8d32-48ed-bbb5-031af4c6a2e2"
+		                    Id="EndPoint1"
+		                    Name="EndPoint1" />
+		<IStartPointComponent DataType=""
+		                      Description="Удалить акт передачи"
+		                      DisplayName="Удалить акт передачи"
+		                      ElementId="e1a4bd59-d176-41fd-b79f-6cdf0ae25607"
+		                      Id="StartDelete"
+		                      Name="StartDelete">
+			<Transitions z:owner="StartDelete">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Удаление"
+				                          ElementId="48238720-6405-44e5-85f5-fa3f95fc85ad"
+				                          Id="Delete@StartDelete"
+				                          Name="Delete@StartDelete"
+				                          Target="EndPoint2"
+				                          Transited="Delete_TransitedEventHandler" />
+			</Transitions>
+		</IStartPointComponent>
+		<IEndPointComponent ElementId="45fa50fe-f5ca-4c4b-9e02-bda9a8e45148"
+		                    Id="EndPoint2"
+		                    Name="EndPoint2" />
+	</GraphPoints>
+</IUnitMetadataComponent>

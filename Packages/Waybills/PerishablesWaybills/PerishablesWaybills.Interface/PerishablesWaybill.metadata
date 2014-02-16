@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="8c2a8767-1625-49df-b479-2477ee5dd14f" name="Acme.Business.Waybills.PerishablesWaybills.PerishablesWaybill" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Путевой лист для скоропортящихся грузов</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass ref-name="Acme.Business.Waybills.Waybill" />
+  <HierarchyLink />
+  <Details>
+    <Detail id="acc8edc5-834a-4cd3-a09c-276b146fd222" name="PerishablesRoute">
+      <Description>Маршрут скоропортящихся грузов</Description>
+      <Cloneable>True</Cloneable>
+      <DetailClass ref-name="Acme.Business.Waybills.PerishablesWaybills.PerishablesBreakPoint" />
+      <Override ref-name="Acme.Business.Waybills.Waybill/Route" />
+    </Detail>
+  </Details>
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="bafc29ab-eab8-47af-b00d-d535f68d5719" name="ServiceableLife">
+      <Description>Срок годности</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.TimeInterval" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <ClassCalcAttributes>
+    <ClassCalcAttribute id="72dd821b-db53-4aa0-b3d4-d0306c619561" name="TotalWear">
+      <Description>Общий процент износа</Description>
+      <Method>CalculateTotalWear</Method>
+      <Domain ref-name="Acme.Business.Waybills.PerishablesWaybills.WearPercent" />
+      <RefClass />
+    </ClassCalcAttribute>
+  </ClassCalcAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

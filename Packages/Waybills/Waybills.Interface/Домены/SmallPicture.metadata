@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="52c73b2d-0993-4667-b7f9-3f7ce3f6bf74" name="Acme.Business.Waybills.SmallPicture" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Картинка маленьких размеров</Description>
+  <DataType value="Blob" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="58c1e25b-5593-4dfa-8fe7-e676296c439f" name="Acme.Business.Waybills.PerishablesWaybills.PerishablesBreakPoint" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Остановка для скоропортящихся грузов</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass ref-name="Acme.Business.Waybills.BreakPoint" />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="00083dcf-81fc-4f39-b0af-5209e65adbbe" name="Wear">
+      <Description>Процент износа</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.PerishablesWaybills.WearPercent" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass ref-name="Acme.Business.Waybills.PerishablesWaybills.PerishablesWaybill" />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters>
+        <ClassCreateMethodParameter id="69954869-df23-431f-81cc-0e2b4556114e" name="master">
+          <ParameterType>Acme.Business.Waybills.PerishablesWaybills.IPerishablesWaybill</ParameterType>
+          <Nullable>False</Nullable>
+        </ClassCreateMethodParameter>
+      </ClassCreateMethodParameters>
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

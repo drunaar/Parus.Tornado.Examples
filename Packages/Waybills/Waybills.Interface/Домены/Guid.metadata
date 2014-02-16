@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="3eefed9e-3a03-48a1-ad1c-f8d4d5dab4f9" name="Acme.Business.Waybills.GUID" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Глобальный уникальный идентификатор</Description>
+  <DataType value="Guid" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

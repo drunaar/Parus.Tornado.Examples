@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitMetadataComponent xmlns:z="http://parus.com/Tornado/Zml/1.1" xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado" DisplayName="Транспортные средства" ElementId="cc8cd990-c900-4e73-8161-987522ccdad5" Id="Acme.Business.Waybills.Transport" ImageUri="tornado://resource/SmartClient.Tornado/Parus.SmartClient.Tornado.Images.Unit32.png" Name="Acme.Business.Waybills.Transport" UnitBackend="Acme.Business.Waybills.Транспортное_средство.TransportBackend.unitback, Waybills.Client" xmlns="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado">
+  <DataRetrievePoints z:owner="Acme.Business.Waybills.Transport">
+    <IDataRetrievePointComponent BackendOperation="50a24cfc-26bb-408d-95b0-7ac19706b44c" Description="Данные" ElementId="f2d4e011-9cd4-4482-a619-e45739ec6770" Id="Data" Name="Data" QueryId="2fd6dbc1-b179-42cc-98ba-89b50c7244f8" QueryText="SELECT&#xD;&#xA; Identity,&#xD;&#xA; Mnemo,&#xD;&#xA; Name,&#xD;&#xA; Serviceable&#xD;&#xA;FROM [Acme.Business.Waybills.Transport];">
+      <ParameterNames z:owner="Data" />
+    </IDataRetrievePointComponent>
+  </DataRetrievePoints>
+  <GraphPoints z:owner="Acme.Business.Waybills.Transport">
+    <IStartPointComponent DataType="" Description="Стартовая точка раздела" DisplayName="Транспортные средства" ElementId="fed4e07f-5e69-4c2c-b864-3794dfba7878" Id="Start" Name="Start" Type="Browse, Dictionary">
+      <Transitions z:owner="Start">
+        <IUnitTransitionComponent BackendOperation="" Description="Инициализация" ElementId="a99f2279-7d67-4872-9a15-6c3ba1dd159f" Id="Initialize@Start" Name="Initialize@Start" Target="Browse" />
+      </Transitions>
+    </IStartPointComponent>
+    <IInteractionPointComponent Description="Обозреватель" DisplayName="Транспортные средства" ElementId="6bd3d244-340d-41e9-a41d-90acc1add549" FormProvider="BrowseForm" Id="Browse" Name="Browse">
+      <FormProviderParams z:owner="Browse">
+        <tornado:BrowseFormMetadata Id="BrowseFormMetadata">
+          <tornado:Root z:owner="BrowseFormMetadata">
+            <tornado:DataDisplayElement DataPoint="Data" DictionaryStartPoint="Start" Id="DataDisplayElement" Name="Data">
+              <tornado:AvailableActions z:owner="DataDisplayElement">
+                <tornado:ActionInfo Id="ActionInfo" PostActionBehavior="Refresh" TransitionName="Add@Browse" />
+                <tornado:ActionInfo Id="ActionInfo1" PostActionBehavior="Refresh" TransitionName="Edit@Browse" />
+                <tornado:ActionInfo Id="ActionInfo2" PostActionBehavior="Refresh" TransitionName="Clone@Browse" />
+                <tornado:ActionSeparator Id="ActionSeparator" />
+                <tornado:ActionInfo Id="ActionInfo3" PostActionBehavior="Refresh" TransitionName="Delete@Browse" />
+              </tornado:AvailableActions>
+              <tornado:Columns z:owner="DataDisplayElement">
+                <tornado:DataDisplayColumn Caption="Мнемокод" Name="Mnemo" WrapText="False" />
+                <tornado:DataDisplayColumn Caption="Наименование" Name="Name" WrapText="False" />
+                <tornado:DataDisplayColumn Caption="Гоность к эксплуатации" Name="Serviceable" WrapText="False" />
+              </tornado:Columns>
+            </tornado:DataDisplayElement>
+          </tornado:Root>
+        </tornado:BrowseFormMetadata>
+      </FormProviderParams>
+      <Transitions z:owner="Browse">
+        <IUnitTransitionComponent AccessibilityStrategy="AlwaysAccessible" BackendOperation="8b1b5fb4-92c7-48d4-b537-fb1358c0ee86" BackendOperationAction="BeginOperation" Description="Добавить ТС" DisplayName="Добавить…" ElementId="18e663ee-e7c1-4004-ba36-7eb990918544" Id="Add@Browse" Name="Add@Browse" Role="Add" StandardAction="Modification" Target="Edit" TransactionAction="Begin">
+          <StandardActionParameter z:owner="Add@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters" InterfaceType="Acme.Business.Waybills.ITransport, Waybills.Interface" ModificationType="Add" CreationMethod="00000000-0000-0000-0000-000000000000">
+              <t:CreateParameters z:owner="ModificationParameters" xmlns:t="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado" />
+            </tornado:ModificationParameters>
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="eb2d38d7-72b9-4266-891b-5a2966cb99aa" BackendOperationAction="BeginOperation" Description="Изменить ТС" DisplayName="Изменить…" ElementId="4ff51645-9335-48df-9a92-4a332b56669b" Id="Edit@Browse" Name="Edit@Browse" Role="Edit" StandardAction="Modification" Target="Edit" TransactionAction="Begin">
+          <StandardActionParameter z:owner="Edit@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters1" InterfaceType="Acme.Business.Waybills.ITransport, Waybills.Interface" ModificationType="Edit" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="eb2d38d7-72b9-4266-891b-5a2966cb99aa" BackendOperationAction="BeginOperation" Description="Размножить ТС" DisplayName="Размножить…" ElementId="50ea805c-3d14-4304-a45d-455fb86e184f" Id="Clone@Browse" Name="Clone@Browse" Role="Clone" StandardAction="Modification" Target="Edit" TransactionAction="Begin">
+          <StandardActionParameter z:owner="Clone@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters2" InterfaceType="Acme.Business.Waybills.ITransport, Waybills.Interface" ModificationType="Clone" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="5a1fcf92-7243-4c17-bc1b-ed1100f2f324" BackendOperationAction="AutoOperation" Description="Удалить ТС" DisplayName="Удалить" ElementId="d17ecb9b-b425-46bb-8e45-7bdc090bd32f" Id="Delete@Browse" Name="Delete@Browse" Role="Delete" StandardAction="Delete" Target="Browse.Delete.End" />
+      </Transitions>
+    </IInteractionPointComponent>
+    <IInteractionPointComponent Description="Диалог изменения" DisplayName="Транспортное средство" ElementId="4c33a11c-99eb-4325-baf4-c8c2ecab9d8c" FormProvider="ModificationFormTemplate" Id="Edit" Name="Edit">
+      <FormProviderParams z:owner="Edit">
+        <tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.TransportEditForm, Waybills.Client" />
+      </FormProviderParams>
+      <Transitions z:owner="Edit">
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Подтверждение изменений" ElementId="18920ba6-5a3e-467a-92f1-d4d3363756ce" Id="Ok@Edit" Name="Ok@Edit" Role="OK" Target="Edit.Ok.End" TransactionAction="Commit" />
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Отмена изменений" ElementId="6dc5b63d-8d49-423e-8fdd-9dad58db456e" Id="Cancel@Edit" Name="Cancel@Edit" Role="Cancel" Target="Edit.Cancel.End" TransactionAction="Rollback" />
+      </Transitions>
+    </IInteractionPointComponent>
+    <IEndPointComponent Description="Конечная точка" DisplayName="Удалить" ElementId="26106b10-1ddf-419a-a073-5039fd6eb8b9" Id="Browse.Delete.End" Name="Browse.Delete.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="e423c413-dd54-41f5-9b85-fc97d78668bb" Id="Edit.Ok.End" Name="Edit.Ok.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="7070522a-7610-45b1-81ee-2a7e26ae07e5" Id="Edit.Cancel.End" Name="Edit.Cancel.End" />
+  </GraphPoints>
+</IUnitMetadataComponent>

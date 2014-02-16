@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitBackMetadataComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                             xmlns:components="clr-namespace:Parus.Tornado.UnitBack.MetadataComponents;assembly:AppServer.Tornado.ClientModel"
+                            Id="Путевые листы"
+                            Name="Путевые листы" xmlns="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel">
+	<BusinessOperations z:owner="Путевые листы">
+		<IBusinessOperationComponent DisplayName="Добавление/размножение"
+		                             Id="1996a592-4124-4fb2-9911-b6597da18089"
+		                             Identifier="1996a592-4124-4fb2-9911-b6597da18089">
+			<OperationTargets z:owner="1996a592-4124-4fb2-9911-b6597da18089">
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="1996a592-4124-4fb2-9911-b6597da18089-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="1996a592-4124-4fb2-9911-b6597da18089-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-7d431d1a-c3b6-463a-883c-83f2baa70c90-Create" />
+						<ICrudPortComponent CrudType="Read"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+						<ICrudPortComponent CrudType="Update"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-7d431d1a-c3b6-463a-883c-83f2baa70c90-Update" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="1996a592-4124-4fb2-9911-b6597da18089-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="1996a592-4124-4fb2-9911-b6597da18089-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Create" />
+						<ICrudPortComponent CrudType="Read"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="c0d60936-f7fb-4583-b73e-56f0f1e4f10e"
+				                         Id="1996a592-4124-4fb2-9911-b6597da18089-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+					<CrudPorts z:owner="1996a592-4124-4fb2-9911-b6597da18089-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-c0d60936-f7fb-4583-b73e-56f0f1e4f10e-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="e2d54cc4-950a-4ab7-ab95-e751e92871e2"
+				                         Id="1996a592-4124-4fb2-9911-b6597da18089-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+					<CrudPorts z:owner="1996a592-4124-4fb2-9911-b6597da18089-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="1996a592-4124-4fb2-9911-b6597da18089-e2d54cc4-950a-4ab7-ab95-e751e92871e2-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Удаление"
+		                             Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975"
+		                             Identifier="9982ea42-ff78-4d1c-9a85-7c4d89bac975">
+			<OperationTargets z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975">
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+						<ICrudPortComponent CrudType="Delete"
+						                    Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-7d431d1a-c3b6-463a-883c-83f2baa70c90-Delete" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="260b1624-8bec-419a-a067-537bed61e727"
+				                         Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727">
+					<CrudPorts z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727-Create" />
+					</CrudPorts>
+					<MethodPorts z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727">
+						<IClassMethodPortComponent Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727-6418a412-4073-44b0-a230-644f75fdf638"
+						                           MethodId="6418a412-4073-44b0-a230-644f75fdf638" />
+						<IClassMethodPortComponent Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727-a56a1388-0e42-4d17-939c-97578554cce0"
+						                           MethodId="a56a1388-0e42-4d17-939c-97578554cce0" />
+						<IClassMethodPortComponent Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-260b1624-8bec-419a-a067-537bed61e727-376adaa6-e1fc-4f6c-8492-1ebf200859c4"
+						                           MethodId="376adaa6-e1fc-4f6c-8492-1ebf200859c4" />
+					</MethodPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Изменение"
+		                             Id="cb66fdfd-6127-4d35-a6f3-c99cee883948"
+		                             Identifier="cb66fdfd-6127-4d35-a6f3-c99cee883948">
+			<OperationTargets z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948">
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+						<ICrudPortComponent CrudType="Update"
+						                    Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-7d431d1a-c3b6-463a-883c-83f2baa70c90-Update" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="c0d60936-f7fb-4583-b73e-56f0f1e4f10e"
+				                         Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+					<CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-c0d60936-f7fb-4583-b73e-56f0f1e4f10e-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="e2d54cc4-950a-4ab7-ab95-e751e92871e2"
+				                         Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+					<CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-e2d54cc4-950a-4ab7-ab95-e751e92871e2-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Просмотр"
+		                             Id="c21f33de-1e35-4f36-a610-1d986d59c4ca"
+		                             Identifier="c21f33de-1e35-4f36-a610-1d986d59c4ca">
+			<OperationTargets z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca">
+				<components:IUnitBackQueryComponent Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-06a52027-70a0-4773-87e7-4df28b9e75e3"
+				                                    QueryId="06a52027-70a0-4773-87e7-4df28b9e75e3" />
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<components:IUnitBackQueryComponent Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-59697ae0-0750-430b-ac0a-8081e2cc5675"
+				                                    QueryId="59697ae0-0750-430b-ac0a-8081e2cc5675" />
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Добавление/размножение точек маршрута"
+		                             Id="89b899d4-7ad2-4ebe-804e-cd4046813c74"
+		                             Identifier="89b899d4-7ad2-4ebe-804e-cd4046813c74">
+			<OperationTargets z:owner="89b899d4-7ad2-4ebe-804e-cd4046813c74">
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="89b899d4-7ad2-4ebe-804e-cd4046813c74-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Create"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Create" />
+						<ICrudPortComponent CrudType="Read"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+						<ICrudPortComponent CrudType="Update"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Update" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="89b899d4-7ad2-4ebe-804e-cd4046813c74-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="e2d54cc4-950a-4ab7-ab95-e751e92871e2"
+				                         Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+					<CrudPorts z:owner="89b899d4-7ad2-4ebe-804e-cd4046813c74-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-e2d54cc4-950a-4ab7-ab95-e751e92871e2-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="c0d60936-f7fb-4583-b73e-56f0f1e4f10e"
+				                         Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+					<CrudPorts z:owner="89b899d4-7ad2-4ebe-804e-cd4046813c74-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="89b899d4-7ad2-4ebe-804e-cd4046813c74-c0d60936-f7fb-4583-b73e-56f0f1e4f10e-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Изменение точек маршрута"
+		                             Id="e8194944-f74c-4cc3-8694-9766840decd3"
+		                             Identifier="e8194944-f74c-4cc3-8694-9766840decd3">
+			<OperationTargets z:owner="e8194944-f74c-4cc3-8694-9766840decd3">
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="e8194944-f74c-4cc3-8694-9766840decd3-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="e8194944-f74c-4cc3-8694-9766840decd3-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+						<ICrudPortComponent CrudType="Update"
+						                    Id="e8194944-f74c-4cc3-8694-9766840decd3-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Update" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="7d431d1a-c3b6-463a-883c-83f2baa70c90"
+				                         Id="e8194944-f74c-4cc3-8694-9766840decd3-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+					<CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-7d431d1a-c3b6-463a-883c-83f2baa70c90">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="e8194944-f74c-4cc3-8694-9766840decd3-7d431d1a-c3b6-463a-883c-83f2baa70c90-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="e2d54cc4-950a-4ab7-ab95-e751e92871e2"
+				                         Id="e8194944-f74c-4cc3-8694-9766840decd3-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+					<CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-e2d54cc4-950a-4ab7-ab95-e751e92871e2">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="e8194944-f74c-4cc3-8694-9766840decd3-e2d54cc4-950a-4ab7-ab95-e751e92871e2-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+				<IUnitBackClassComponent ClassId="c0d60936-f7fb-4583-b73e-56f0f1e4f10e"
+				                         Id="e8194944-f74c-4cc3-8694-9766840decd3-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+					<CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-c0d60936-f7fb-4583-b73e-56f0f1e4f10e">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="e8194944-f74c-4cc3-8694-9766840decd3-c0d60936-f7fb-4583-b73e-56f0f1e4f10e-Read" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+		<IBusinessOperationComponent DisplayName="Удаление точек маршрута"
+		                             Id="65ac4c10-bb11-4022-8559-142c558b6c2d"
+		                             Identifier="65ac4c10-bb11-4022-8559-142c558b6c2d">
+			<OperationTargets z:owner="65ac4c10-bb11-4022-8559-142c558b6c2d">
+				<IUnitBackClassComponent ClassId="7b4eb21d-95f6-48c8-9f97-0aacd4a31310"
+				                         Id="65ac4c10-bb11-4022-8559-142c558b6c2d-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+					<CrudPorts z:owner="65ac4c10-bb11-4022-8559-142c558b6c2d-7b4eb21d-95f6-48c8-9f97-0aacd4a31310">
+						<ICrudPortComponent CrudType="Read"
+						                    Id="65ac4c10-bb11-4022-8559-142c558b6c2d-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Read" />
+						<ICrudPortComponent CrudType="Delete"
+						                    Id="65ac4c10-bb11-4022-8559-142c558b6c2d-7b4eb21d-95f6-48c8-9f97-0aacd4a31310-Delete" />
+					</CrudPorts>
+				</IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationComponent>
+	</BusinessOperations>
+</IUnitBackMetadataComponent>

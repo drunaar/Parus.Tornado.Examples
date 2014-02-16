@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="ProjTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81195778-9b8c-44c6-bc57-3bfc41e7094c}</ProjectGuid>
+    <PkgTargetsFile>pkg.targets</PkgTargetsFile>
+    <CompilerPath>
+    </CompilerPath>
+    <PackName>Waybills</PackName>
+    <PackDescription>Путевые листы</PackDescription>
+    <PackVersion>1.0.0.0</PackVersion>
+    <PackGuid>{b5c5d1c8-d98a-4814-8423-76b34eee7ef2}</PackGuid>
+    <PkgRelativePath>..\..\..\Target\BusinessLib\Waybills\</PkgRelativePath>
+    <PkgFile>Waybills.pkg</PkgFile>
+    <PkgbuildRelativePath>
+    </PkgbuildRelativePath>
+    <PkgbuildFile>Waybills.Pkg.pkgbuild</PkgbuildFile>
+    <KeyFile>parus.Develop.Private.ppk</KeyFile>
+    <KeyRelativePath>..\..\..\Parus\Key\</KeyRelativePath>
+    <BusinessLibDir>..\..\..\Target\BusinessLib\Waybills\</BusinessLibDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Tornado\$(PkgTargetsFile)" />
+  <Target Name="CoreCompile" />
+  <Target Name="CopyFilesToOutputDirectory" />
+  <Target Name="ProjTarget">
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="PkgTarget" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <Name>Waybills.Pkg</Name>
+    <RootNamespace>Waybills.Pkg</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AdditionalPkgRelativeDir>..\..\..\Target\Server\packs\</AdditionalPkgRelativeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ExtCont Include="Ext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PkgCont Include="Pkg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <CsCont Include="Cs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Waybills.Client\Waybills.Client.csproj">
+      <Project>b31bbe80-0e26-436b-8e11-0aa1acae87e7</Project>
+      <Name>Waybills.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Waybills.Interface\Waybills.Interface.csproj">
+      <Project>e9fda3dc-0320-4222-81ba-e14889782409</Project>
+      <Name>Waybills.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Waybills.Server\Waybills.Server.csproj">
+      <Project>75c2a4da-5147-4bd4-8f9e-33acabcdec04</Project>
+      <Name>Waybills.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.ClassMetadataExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.UnitBackendExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.LinkDescriptorExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.LinkDescriptorExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</DisplayName>
+      <FullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</FullName>
+      <Assembly>AppServer.Tornado.Deploy</Assembly>
+    </Ext>
+  </ItemGroup>
+  <ItemGroup>
+    <PkgFile Include="..\..\..\Parus\TornadoLib\s7support.pkg" />
+    <PkgFile Include="..\..\..\Parus\Tornadolib\syspackage.pkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ItemExtFile Include=".\ExtMenu.InitData.linkunit">
+      <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
+    </ItemExtFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ItemExtFile Include=".\Workplace.InitData.xml">
+      <ExtFullName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</ExtFullName>
+    </ItemExtFile>
+    <ItemExtFile Include="Waybills.Client.linkunit">
+      <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
+    </ItemExtFile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+       Id="m_WayPointEditForm"
+       MinSize="89.9583 mm; 39.9521 mm"
+       Size="89.9583 mm; 48.9479 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<BindKey z:owner="m_BindingProvider"></BindKey>
+	<Layout z:owner="LayoutManager">LayoutManager3</Layout>
+	<LayoutManager z:owner="m_WayPointEditForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<ITableLayout Id="LayoutManager3">
+				<Columns z:owner="LayoutManager3">
+					<ILayoutColumn Percent="100"
+					               SizeType="Percent"
+					               Width="0 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+				</Columns>
+				<Rows z:owner="LayoutManager3">
+					<ILayoutRow Height="14.02 mm"
+					            Percent="50"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="7 mm"
+					            Percent="0"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="0 mm"
+					            Percent="100"
+					            SizeType="Percent">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+				</Rows>
+			</ITableLayout>
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+	<IEdit AcceptsReturn="True"
+	       Id="m_Edit"
+	       MaxChars="32767"
+	       Multiline="True"
+	       TabIndex="3"
+	       TabStop="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider">ctx:Text:Context.CurrentObject/Note</BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,2</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">25.9292 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">21.9604 mm</Top>
+		<Width z:owner="LayoutManager3">87.8417 mm</Width>
+	</IEdit>
+	<ILabel Id="m_Label2"
+	        TabIndex="2"
+	        TabStop="False"
+	        Text="Примечание:"
+	        TextAlign="BottomLeft"
+	        WrapText="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,1</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">4.7625 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">15.0812 mm</Top>
+		<Width z:owner="LayoutManager3">87.8417 mm</Width>
+	</ILabel>
+	<IFormSocket FormClass="Acme.Business.Waybills.MnemoNameEditForm, Waybills.Client"
+	             Id="m_MnemoName"
+	             TabIndex="1"
+	             TabStop="False"
+	             UseDataSource="False">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">14.0229 mm</Height>
+		<Left z:owner="LayoutManager3">0.0 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">0.0 mm</Top>
+		<Width z:owner="LayoutManager3">89.9583 mm</Width>
+	</IFormSocket>
+	<IBindingProvider Id="m_BindingProvider" />
+</IForm>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<init xmlns="http://www.parus.ru/initdata.xsd">
+  <items>
+    <data>
+      <insert>
+        <!-- Parus.Net.UnitsProvider.ApplicationInfo -->
+        <class id="6c9b9c7d-97c4-490c-8c95-e7707d53054a">
+          <record id="443D2337-903C-4cbf-8E28-1945F52BC7CC">
+            <field name="Name">Путевые листы</field>
+            <field name="Description">Путевые листы.</field>
+            <field name="Config">
+              <![CDATA[<?xml version="1.0" encoding="utf-16" standalone="no"?>
+<?zml version="1.21"?>
+<ApplicationConfig  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                   Id="m_ApplicationConfig" xmlns="clr-namespace:Parus.Net.Sail7Plus;assembly:Sail7Modules">
+  <ApplicationMenu z:owner="m_ApplicationConfig">
+    <ApplicationMenuItem Id="m_ApplicationMenuItem5"
+		                     Label="Пункты маршрута"
+		                     UnitName="Acme.Business.Waybills.WayPointUnit,  Waybills.Client"
+		                     UnitStartPoint="Start">
+      <Items z:owner="m_ApplicationMenuItem5" />
+    </ApplicationMenuItem>
+    <ApplicationMenuItem Id="m_ApplicationMenuItem4"
+		                     Label="Транспортные средства"
+		                     UnitName="Acme.Business.Waybills.TransportUnit,  Waybills.Client"
+		                     UnitStartPoint="Start">
+      <Items z:owner="m_ApplicationMenuItem4" />
+    </ApplicationMenuItem>
+    <ApplicationMenuItem Id="m_ApplicationMenuItem1"
+		                     Label="Путевые листы"
+		                     UnitName="Acme.Business.Waybills.WaybillUnit,  Waybills.Client"
+		                     UnitStartPoint="Start">
+      <Items z:owner="m_ApplicationMenuItem1" />
+    </ApplicationMenuItem>
+  </ApplicationMenu>
+</ApplicationConfig>]]>
+            </field>
+          </record>
+        </class>
+
+        <!-- Parus.Net.UsersGroup -->
+        <class id="e5a57a6d-92aa-44ff-8475-bf69b3402d14">
+          <record id="00000000-0000-0000-0001-000000000002">
+            <field name="Name">Everyone</field>
+          </record>
+        </class>
+
+        <!-- Parus.Net.UnitsProvider.Assignment -->
+        <class id="a81a1c64-d787-4e57-bb24-9797c42f31c2">
+          <record id="67FD7A52-2EF0-4199-94E0-FC165D266792">
+            <link name="Application" type_id="6c9b9c7d-97c4-490c-8c95-e7707d53054a">443D2337-903C-4cbf-8E28-1945F52BC7CC</link>
+            <link name="UsersGroup" type_id="e5a57a6d-92aa-44ff-8475-bf69b3402d14">00000000-0000-0000-0001-000000000002</link>
+          </record>
+        </class>
+
+      </insert>
+    </data>
+  </items>
+</init>

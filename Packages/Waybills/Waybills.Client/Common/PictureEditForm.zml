@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+       Id="m_PictureEditForm"
+       Size="70.1146 mm; 39.9521 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<Layout z:owner="LayoutManager">LayoutManager3</Layout>
+	<LayoutManager z:owner="m_PictureEditForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<ITableLayout Id="LayoutManager3">
+				<Columns z:owner="LayoutManager3">
+					<ILayoutColumn Percent="100"
+					               SizeType="Percent"
+					               Width="0 mm" />
+					<ILayoutColumn Percent="50"
+					               SizeType="Absolute"
+					               Width="25.9292 mm" />
+				</Columns>
+				<Rows z:owner="LayoutManager3">
+					<ILayoutRow Height="0 mm"
+					            Percent="100"
+					            SizeType="Percent" />
+				</Rows>
+			</ITableLayout>
+			<IAbsolutePositionLayout Id="LayoutManager4" />
+			<IAbsolutePositionLayout Id="LayoutManager2" />
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<IPanel Id="m_Panel"
+	        TabIndex="1"
+	        TabStop="False">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">1,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">37.8354 mm</Height>
+		<Layout z:owner="LayoutManager">LayoutManager4</Layout>
+		<Left z:owner="LayoutManager3">45.2438 mm</Left>
+		<Margins z:owner="LayoutManager4">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<Top z:owner="LayoutManager3">1.0583 mm</Top>
+		<Width z:owner="LayoutManager3">23.8125 mm</Width>
+		<IButton Click="Clear_ClickEventHandler"
+		         Id="m_Button2"
+		         TabIndex="2"
+		         TabStop="True"
+		         Text="Очистить"
+		         TextAlign="MiddleCenter">
+			<Anchor z:owner="LayoutManager4">Top, Left</Anchor>
+			<Dock z:owner="LayoutManager4">None</Dock>
+			<FormResult z:owner="m_PictureEditForm">None</FormResult>
+			<Height z:owner="LayoutManager4">6.0854 mm</Height>
+			<Left z:owner="LayoutManager4">0.7938 mm</Left>
+			<Top z:owner="LayoutManager4">16.1396 mm</Top>
+			<Width z:owner="LayoutManager4">22.2250 mm</Width>
+		</IButton>
+		<IButton Click="Save_ClickEventHandler"
+		         Enabled="False"
+		         Id="m_Save"
+		         TabIndex="1"
+		         TabStop="True"
+		         Text="Выгрузить"
+		         TextAlign="MiddleCenter">
+			<Anchor z:owner="LayoutManager4">Top, Left</Anchor>
+			<Dock z:owner="LayoutManager4">None</Dock>
+			<FormResult z:owner="m_PictureEditForm">None</FormResult>
+			<Height z:owner="LayoutManager4">6.0854 mm</Height>
+			<Left z:owner="LayoutManager4">0.7938 mm</Left>
+			<Top z:owner="LayoutManager4">8.4667 mm</Top>
+			<Width z:owner="LayoutManager4">22.2250 mm</Width>
+		</IButton>
+		<IButton Click="Open_ClickEventHandler"
+		         Id="m_Button"
+		         TabIndex="0"
+		         TabStop="True"
+		         Text="Загрузить"
+		         TextAlign="MiddleCenter">
+			<Anchor z:owner="LayoutManager4">Top, Left</Anchor>
+			<Dock z:owner="LayoutManager4">None</Dock>
+			<FormResult z:owner="m_PictureEditForm">None</FormResult>
+			<Height z:owner="LayoutManager4">6.0854 mm</Height>
+			<Left z:owner="LayoutManager4">0.7938 mm</Left>
+			<Top z:owner="LayoutManager4">0.7938 mm</Top>
+			<Width z:owner="LayoutManager4">22.2250 mm</Width>
+		</IButton>
+	</IPanel>
+	<IGroupBox Id="m_GroupBox"
+	           ShowCaption="False"
+	           TabIndex="0"
+	           TabStop="False"
+	           Text="m_GroupBox">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">37.8354 mm</Height>
+		<Layout z:owner="LayoutManager">LayoutManager2</Layout>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<Margins z:owner="LayoutManager2">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<Top z:owner="LayoutManager3">1.0583 mm</Top>
+		<Width z:owner="LayoutManager3">42.0688 mm</Width>
+		<IPicture DisplayMode="Zoom"
+		          Id="m_Picture"
+		          TabIndex="0"
+		          TabStop="False">
+			<Anchor z:owner="LayoutManager2">All</Anchor>
+			<Dock z:owner="LayoutManager2">None</Dock>
+			<Height z:owner="LayoutManager2">35.1896 mm</Height>
+			<Left z:owner="LayoutManager2">1.3229 mm</Left>
+			<Top z:owner="LayoutManager2">1.3229 mm</Top>
+			<Width z:owner="LayoutManager2">39.4229 mm</Width>
+		</IPicture>
+	</IGroupBox>
+</IForm>

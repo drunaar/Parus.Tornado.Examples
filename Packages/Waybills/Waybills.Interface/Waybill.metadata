@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="7d431d1a-c3b6-463a-883c-83f2baa70c90" name="Acme.Business.Waybills.Waybill" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Путевой лист</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <Details>
+    <Detail id="05f5a5db-96e4-4cca-9137-2a8fbb146c72" name="Route">
+      <Description>Маршрут (коллекция точек остановок)</Description>
+      <Cloneable>True</Cloneable>
+      <DetailClass ref-name="Acme.Business.Waybills.BreakPoint" />
+      <Override />
+    </Detail>
+  </Details>
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="1e72b463-b1c9-4140-979b-4c711210ad2c" name="Number">
+      <Description>Номер документа</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.DocNumber" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="530cd208-7693-4941-9a37-1f660a9569e9" name="Date">
+      <Description>Дата документа</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Date" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <ClassRefAttributes>
+    <ClassRefAttribute id="ed4ef9f5-e097-4637-9648-ae9e16c853c5" name="Transport">
+      <Description>Транспортное средство</Description>
+      <LinkKind value="Using" />
+      <LinkRule value="None" />
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <RefClass ref-name="Acme.Business.Waybills.Transport" />
+    </ClassRefAttribute>
+  </ClassRefAttributes>
+  <ClassConstraints>
+    <ClassConstraint id="130a48fe-b03f-4bbb-b08a-71adc121c107" name="ConstraintNumber">
+      <Description>Ограничение на уникальность номера документа</Description>
+      <ConstraintType value="Unique" />
+      <ClassConstraintAttributes>
+        <ClassConstraintAttribute id="793edd06-5d47-4e13-a3c4-7bc3b20c9879" name="ConstraintAttributeNumber">
+          <Description>Номер документа</Description>
+          <RefClassPhysicalAttribute ref-name="Acme.Business.Waybills.Waybill/Number" />
+          <RefClassRefAttribute />
+          <ExactType>False</ExactType>
+        </ClassConstraintAttribute>
+      </ClassConstraintAttributes>
+    </ClassConstraint>
+  </ClassConstraints>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitMetadataComponent xmlns:z="http://parus.com/Tornado/Zml/1.1" xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado" DisplayName="Путевые листы" ElementId="4306da5a-6423-43f9-bd1e-7401d3162f40" Id="Acme.Business.Waybills.Waybill" ImageUri="tornado://resource/SmartClient.Tornado/Parus.SmartClient.Tornado.Images.Unit32.png" Name="Acme.Business.Waybills.Waybill" UnitBackend="Acme.Business.Waybills.Путевой_лист.WaybillBackend.unitback, Waybills.Client" xmlns="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado">
+  <DataRetrievePoints z:owner="Acme.Business.Waybills.Waybill">
+    <IDataRetrievePointComponent BackendOperation="c21f33de-1e35-4f36-a610-1d986d59c4ca" Description="Данные путевых листов" ElementId="36eff8d0-5de3-4c69-9bff-33f9f95f7f31" Id="Waybill_Data" Name="Waybill_Data" QueryId="06a52027-70a0-4773-87e7-4df28b9e75e3" QueryText="SELECT&#xD;&#xA; Identity,&#xD;&#xA; Number,&#xD;&#xA; Date,&#xD;&#xA; Transport.Mnemo as Transport&#xD;&#xA;FROM [Acme.Business.Waybills.Waybill];">
+      <ParameterNames z:owner="Waybill_Data" />
+    </IDataRetrievePointComponent>
+    <IDataRetrievePointComponent BackendOperation="c21f33de-1e35-4f36-a610-1d986d59c4ca" Description="Данные точек остановок" ElementId="be2f2002-a11d-48fb-9cc5-f6a18c623cee" Id="BreakPoint_Data" Name="BreakPoint_Data" QueryId="59697ae0-0750-430b-ac0a-8081e2cc5675" QueryText="DECLARE @Master AS [Acme.Business.Waybills.Waybill];&#xD;&#xA;SELECT&#xD;&#xA; Identity,&#xD;&#xA; Number,&#xD;&#xA; ArrivalDate,&#xD;&#xA; DepartureDate,&#xD;&#xA; Point.Mnemo as Point&#xD;&#xA;FROM [Acme.Business.Waybills.BreakPoint]&#xD;&#xA;WHERE Master=@Master;">
+      <ParameterNames z:owner="BreakPoint_Data">
+        <z:object z:type="System.String" z:value="Master" />
+      </ParameterNames>
+    </IDataRetrievePointComponent>
+  </DataRetrievePoints>
+  <GraphPoints z:owner="Acme.Business.Waybills.Waybill">
+    <IStartPointComponent DataType="" Description="Стартовая точка раздела" DisplayName="Путевые листы" ElementId="cad88045-cc61-40ee-9527-26a8318c6657" Id="Start" Name="Start">
+      <Transitions z:owner="Start">
+        <IUnitTransitionComponent BackendOperation="" Description="Инициализация" ElementId="e5d3a5c2-0945-43f0-ba32-a5988bef5835" Id="Initialize@Start" Name="Initialize@Start" Target="Browse" />
+      </Transitions>
+    </IStartPointComponent>
+    <IInteractionPointComponent Description="Обозреватель" DisplayName="Путевые листы" ElementId="cf5fa9a2-bb5a-4850-9fa2-c4d6323cf4fb" FormProvider="BrowseForm" Id="Browse" Name="Browse">
+      <FormProviderParams z:owner="Browse">
+        <tornado:BrowseFormMetadata Id="BrowseFormMetadata">
+          <tornado:Root z:owner="BrowseFormMetadata">
+            <tornado:DataDisplayElement DataPoint="Waybill_Data" Id="DataDisplayElement" Name="Waybill_Data">
+              <tornado:AvailableActions z:owner="DataDisplayElement">
+                <tornado:ActionInfo Id="ActionInfo4" PostActionBehavior="Refresh" TransitionName="AddWaybill@Browse" />
+                <tornado:ActionInfo Id="ActionInfo5" PostActionBehavior="Refresh" TransitionName="EditWaybill@Browse" />
+                <tornado:ActionInfo Id="ActionInfo6" PostActionBehavior="Refresh" TransitionName="CloneWaybill@Browse" />
+                <tornado:ActionSeparator Id="ActionSeparator1" />
+                <tornado:ActionInfo Id="ActionInfo7" PostActionBehavior="Refresh" TransitionName="DeleteWaybill@Browse" />
+              </tornado:AvailableActions>
+              <tornado:Columns z:owner="DataDisplayElement">
+                <tornado:DataDisplayColumn Caption="Номер документа" Name="Number" WrapText="False" />
+                <tornado:DataDisplayColumn Caption="Дата документа" Name="Date" WrapText="False" />
+                <tornado:DataDisplayColumn Caption="Транспортное средство" Name="Transport" WrapText="False" />
+              </tornado:Columns>
+              <tornado:Details z:owner="DataDisplayElement">
+                <tornado:DataDisplayElement DataPoint="BreakPoint_Data" DisplayName="Точки маршрута" Id="DataDisplayElement1" Name="BreakPoint_Data" ParentKeyParameter="Master" ParentViewKey="Identity">
+                  <tornado:AvailableActions z:owner="DataDisplayElement1">
+                    <tornado:ActionInfo Id="ActionInfo8" PostActionBehavior="Refresh" TransitionName="AddBreakPoint@Browse" />
+                    <tornado:ActionInfo Id="ActionInfo9" PostActionBehavior="Refresh" TransitionName="EditBreakPoint@Browse" />
+                    <tornado:ActionInfo Id="ActionInfo10" PostActionBehavior="Refresh" TransitionName="CloneBreakPoint@Browse" />
+                    <tornado:ActionSeparator Id="ActionSeparator2" />
+                    <tornado:ActionInfo Id="ActionInfo11" PostActionBehavior="Refresh" TransitionName="DeleteBreakPoint@Browse" />
+                  </tornado:AvailableActions>
+                  <tornado:Columns z:owner="DataDisplayElement1">
+                    <tornado:DataDisplayColumn Caption="№" Name="Number" WrapText="False" />
+                    <tornado:DataDisplayColumn Caption="Пункт маршрута" Name="Point" WrapText="False" />
+                    <tornado:DataDisplayColumn Caption="Даты прибытия" Name="ArrivalDate" WrapText="False" />
+                    <tornado:DataDisplayColumn Caption="Дата отбытия" Name="DepartureDate" WrapText="False" />
+                  </tornado:Columns>
+                </tornado:DataDisplayElement>
+              </tornado:Details>
+            </tornado:DataDisplayElement>
+          </tornado:Root>
+        </tornado:BrowseFormMetadata>
+      </FormProviderParams>
+      <Transitions z:owner="Browse">
+        <IUnitTransitionComponent AccessibilityStrategy="AlwaysAccessible" BackendOperation="1996a592-4124-4fb2-9911-b6597da18089" BackendOperationAction="BeginOperation" Description="Добавить путевой лист" DisplayName="Добавить…" ElementId="cbe7adcc-62c4-47b1-a119-74081cfadf0d" Id="AddWaybill@Browse" Name="AddWaybill@Browse" Role="Add" StandardAction="Modification" Target="EditWaybill" TransactionAction="Begin" Transited="ModifyWaybill_TransitedEventHandler">
+          <StandardActionParameter z:owner="AddWaybill@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters" InterfaceType="Acme.Business.Waybills.IWaybill, Waybills.Interface" ModificationType="Add" CreationMethod="00000000-0000-0000-0000-000000000000">
+              <t:CreateParameters z:owner="ModificationParameters" xmlns:t="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado" />
+            </tornado:ModificationParameters>
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="cb66fdfd-6127-4d35-a6f3-c99cee883948" BackendOperationAction="BeginOperation" Description="Изменить путевой лист" DisplayName="Изменить…" ElementId="3e74c837-0f5d-4c2c-98af-56abe951757d" Id="EditWaybill@Browse" Name="EditWaybill@Browse" Role="Edit" StandardAction="Modification" Target="EditWaybill" TransactionAction="Begin" Transited="ModifyWaybill_TransitedEventHandler">
+          <StandardActionParameter z:owner="EditWaybill@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters1" InterfaceType="Acme.Business.Waybills.IWaybill, Waybills.Interface" ModificationType="Edit" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="1996a592-4124-4fb2-9911-b6597da18089" BackendOperationAction="BeginOperation" Description="Разможить путевой лист" DisplayName="Размножить…" ElementId="dc3c7aad-95d0-47d3-9ab3-569e34be4901" Id="CloneWaybill@Browse" Name="CloneWaybill@Browse" Role="Clone" StandardAction="Modification" Target="EditWaybill" TransactionAction="Begin" Transited="ModifyWaybill_TransitedEventHandler">
+          <StandardActionParameter z:owner="CloneWaybill@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters2" InterfaceType="Acme.Business.Waybills.IWaybill, Waybills.Interface" ModificationType="Clone" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="9982ea42-ff78-4d1c-9a85-7c4d89bac975" BackendOperationAction="AutoOperation" Description="Удалить путевой лист" DisplayName="Удалить" ElementId="2836f9c8-46ff-4c98-af23-9d0455aca8e2" Id="DeleteWaybill@Browse" Name="DeleteWaybill@Browse" Role="Delete" StandardAction="Delete" Target="Browse.DeleteWaybill.End" />
+        <IUnitTransitionComponent AccessibilityStrategy="ParentSelectionExist" BackendOperation="89b899d4-7ad2-4ebe-804e-cd4046813c74" BackendOperationAction="BeginOperation" Description="Добавить точку остановки" DisplayName="Добавить…" ElementId="c1f46a5d-2d5a-47f2-88e5-2ab0bb647ad1" Id="AddBreakPoint@Browse" Name="AddBreakPoint@Browse" Role="Add" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin" Transited="ModifyBreakPoint_TransitedEventHandler">
+          <StandardActionParameter z:owner="AddBreakPoint@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters3" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Add" CreationMethod="00000000-0000-0000-0000-000000000000">
+              <t:CreateParameters z:owner="ModificationParameters3" xmlns:t="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado">
+                <t:CreateObjectParameter Id="dd53c16a3fd44f21a1a1147f0fb99bc8" ParameterName="master" ParameterRetrieverName="ParentSelection" />
+              </t:CreateParameters>
+            </tornado:ModificationParameters>
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="e8194944-f74c-4cc3-8694-9766840decd3" BackendOperationAction="BeginOperation" Description="Изменить точку остановки" DisplayName="Изменить…" ElementId="a9a9c160-8d7f-4ea5-a617-4954f33e0cee" Id="EditBreakPoint@Browse" Name="EditBreakPoint@Browse" Role="Edit" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin" Transited="ModifyBreakPoint_TransitedEventHandler">
+          <StandardActionParameter z:owner="EditBreakPoint@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters4" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Edit" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="89b899d4-7ad2-4ebe-804e-cd4046813c74" BackendOperationAction="BeginOperation" Description="Размножить точку остановки" DisplayName="Размножить…" ElementId="94ad88fa-fcfb-4e57-9a39-22ea118cf01a" Id="CloneBreakPoint@Browse" Name="CloneBreakPoint@Browse" Role="Clone" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin" Transited="ModifyBreakPoint_TransitedEventHandler">
+          <StandardActionParameter z:owner="CloneBreakPoint@Browse">
+            <tornado:ModificationParameters Id="ModificationParameters5" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Clone" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="65ac4c10-bb11-4022-8559-142c558b6c2d" BackendOperationAction="AutoOperation" Description="Удалить точку остановки" DisplayName="Удалить" ElementId="b971aaae-06ba-4781-bc43-c1b5cd5ccb0a" Id="DeleteBreakPoint@Browse" Name="DeleteBreakPoint@Browse" Role="Delete" StandardAction="Delete" Target="Browse.DeleteBreakPoint.End" />
+      </Transitions>
+    </IInteractionPointComponent>
+    <IInteractionPointComponent Description="Диалог изменения путевого листа" DisplayName="Путевой лист" ElementId="08068933-9d1e-4067-8275-06d5d3eadd60" FormProvider="ModificationFormTemplate" Id="EditWaybill" Name="EditWaybill">
+      <FormProviderParams z:owner="EditWaybill">
+        <tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.WaybillEditForm, Waybills.Client" />
+      </FormProviderParams>
+      <Transitions z:owner="EditWaybill">
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Подтверждение изменений путевого листа" ElementId="49a16dd7-f922-451b-b710-ac25bd1eebb3" Id="Ok@EditWaybill" Name="Ok@EditWaybill" Role="OK" Target="EditWaybill.Ok.End" TransactionAction="Commit" />
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Отмена изменений путевого листа" ElementId="f12eca43-ae2f-476d-a6b1-dbac270a8724" Id="Cancel@EditWaybill" Name="Cancel@EditWaybill" Role="Cancel" Target="EditWaybill.Cancel.End" TransactionAction="Rollback" />
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="65ac4c10-bb11-4022-8559-142c558b6c2d" BackendOperationAction="AutoOperation" Description="Удалить точку остановки" DisplayName="Удалить" ElementId="e0ba994a-85f5-4e4f-9d0e-11aceee19dac" Id="DeleteBreakPoint@EditWaybill" Name="DeleteBreakPoint@EditWaybill" Role="Delete" StandardAction="Delete" Target="EditWaybill.DeleteBreakPoint.End" />
+        <IUnitTransitionComponent AccessibilityStrategy="AlwaysAccessible" BackendOperation="89b899d4-7ad2-4ebe-804e-cd4046813c74" BackendOperationAction="BeginOperation" Description="Добавить точку остановки" DisplayName="Добавить…" ElementId="fd7da761-2c1b-4edc-83e6-80ebfd12e3ba" Id="AddBreakPoint@EditWaybill" Name="AddBreakPoint@EditWaybill" Role="Add" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin">
+          <StandardActionParameter z:owner="AddBreakPoint@EditWaybill">
+            <tornado:ModificationParameters Id="ModificationParameters6" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Add" CreationMethod="00000000-0000-0000-0000-000000000000">
+              <t:CreateParameters z:owner="ModificationParameters6" xmlns:t="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado">
+                <t:CreateObjectParameter Id="b3dd1c3a02ff4b978f6c78284a50922c" ParameterName="master" ParameterRetrieverName="ParentSelection" />
+              </t:CreateParameters>
+            </tornado:ModificationParameters>
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="e8194944-f74c-4cc3-8694-9766840decd3" BackendOperationAction="BeginOperation" Description="Изменить точку остановки" DisplayName="Изменить…" ElementId="b24eb61f-c9ac-4d6f-9b1e-e0d459922db7" Id="EditBreakPoint@EditWaybill" Name="EditBreakPoint@EditWaybill" Role="Edit" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin">
+          <StandardActionParameter z:owner="EditBreakPoint@EditWaybill">
+            <tornado:ModificationParameters Id="ModificationParameters7" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Edit" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+        <IUnitTransitionComponent AccessibilityStrategy="RecordSelected" BackendOperation="89b899d4-7ad2-4ebe-804e-cd4046813c74" BackendOperationAction="BeginOperation" Description="Размножить точку остановки" DisplayName="Размножить…" ElementId="d66aa5a2-9552-4808-9ad5-890b267a09d3" Id="CloneBreakPoint@EditWaybill" Name="CloneBreakPoint@EditWaybill" Role="Clone" StandardAction="Modification" Target="EditBreakPoint" TransactionAction="Begin">
+          <StandardActionParameter z:owner="CloneBreakPoint@EditWaybill">
+            <tornado:ModificationParameters Id="ModificationParameters8" InterfaceType="Acme.Business.Waybills.IBreakPoint, Waybills.Interface" ModificationType="Clone" />
+          </StandardActionParameter>
+        </IUnitTransitionComponent>
+      </Transitions>
+    </IInteractionPointComponent>
+    <IEndPointComponent Description="Конечная точка" DisplayName="Удалить" ElementId="69c65e9a-35eb-463f-b34a-c0b3a3a032ea" Id="Browse.DeleteWaybill.End" Name="Browse.DeleteWaybill.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="c6cd8f2f-ff2d-428d-8cbe-b62df5f1d02a" Id="EditWaybill.Ok.End" Name="EditWaybill.Ok.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="a97125aa-188a-4881-a746-68b19105ba57" Id="EditWaybill.Cancel.End" Name="EditWaybill.Cancel.End" />
+    <IInteractionPointComponent Description="Диалог изменения точки остановки" DisplayName="Точка маршрута" ElementId="c094dbd9-2b4d-414d-a106-a8cfb9e64d27" FormProvider="ModificationFormTemplate" Id="EditBreakPoint" Name="EditBreakPoint">
+      <FormProviderParams z:owner="EditBreakPoint">
+        <tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.BreakPointEditForm, Waybills.Client" />
+      </FormProviderParams>
+      <Transitions z:owner="EditBreakPoint">
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Подтверждение изменений точки остановки" ElementId="ec555d55-9124-4adc-835e-6ae295c0a9a8" Id="Ok@EditBreakPoint" Name="Ok@EditBreakPoint" Role="OK" Target="EditBreakPoint.Ok.End" TransactionAction="Commit" />
+        <IUnitTransitionComponent BackendOperation="" BackendOperationAction="EndOperation" Description="Отмена изменений точки остановки" ElementId="ef87213d-22e3-4aec-b30d-232e7f76da3f" Id="Cancel@EditBreakPoint" Name="Cancel@EditBreakPoint" Role="Cancel" Target="EditBreakPoint.Cancel.End" TransactionAction="Rollback" />
+      </Transitions>
+    </IInteractionPointComponent>
+    <IEndPointComponent Description="Конечная точка" DisplayName="Удалить" ElementId="ec3060da-430a-43e3-a929-e201f13e0c78" Id="Browse.DeleteBreakPoint.End" Name="Browse.DeleteBreakPoint.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="c698fbbc-26e4-4a5f-9a60-5180463ec7a5" Id="EditBreakPoint.Ok.End" Name="EditBreakPoint.Ok.End" />
+    <IEndPointComponent Description="Конечная точка" ElementId="8a78719c-0a02-40c4-a5eb-cb1756877ca1" Id="EditBreakPoint.Cancel.End" Name="EditBreakPoint.Cancel.End" />
+    <IEndPointComponent Description="Конечная точка" DisplayName="Удалить" ElementId="5bc2bd91-6e67-4628-a859-581b285b2f1a" Id="EditWaybill.DeleteBreakPoint.End" Name="EditWaybill.DeleteBreakPoint.End" />
+  </GraphPoints>
+</IUnitMetadataComponent>

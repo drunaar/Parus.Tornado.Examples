@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitMetadataComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                         xmlns:tornado="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Tornado"
+                        DisplayName="Загрузчик пунктов маршрута"
+                        ElementId="967b7880-8f49-457d-939f-b23f1345642b"
+                        Id="WayPointsLoader"
+                        ImageUri="tornado://resource/SmartClient.Tornado/Parus.SmartClient.Tornado.Images.Unit32.png"
+                        Name="WayPointsLoader"
+                        UnitBackend="Acme.Business.Waybills.WayPointsLoader.WayPointsLoaderBackend.unitback, WayPointsLoader.Client" xmlns="clr-namespace:Parus.SmartClient.Tornado;assembly:SmartClient.Model.Tornado">
+	<DataRetrievePoints z:owner="WayPointsLoader" />
+	<GraphPoints z:owner="WayPointsLoader">
+		<IStartPointComponent DataType=""
+		                      Description="Стартовая точка"
+		                      DisplayName="Загрузчик пунктов маршрута"
+		                      ElementId="209cadc9-db7e-4182-bba4-3ebf11663593"
+		                      Id="Start"
+		                      Name="Start">
+			<Transitions z:owner="Start">
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Переход"
+				                          ElementId="e8efb43b-59ad-439b-9981-8fec774e1e5a"
+				                          Id="UnitTransition"
+				                          Name="UnitTransition"
+				                          Target="Loader" />
+			</Transitions>
+		</IStartPointComponent>
+		<IInteractionPointComponent Description="Диалог загрузки пунктов маршрута"
+		                            DisplayName="Загрузчик пунктов маршрута"
+		                            ElementId="d11b5d67-3662-4ab6-89f4-3edcf2abfee2"
+		                            FormProvider="ActionFormTemplate"
+		                            Id="Loader"
+		                            Name="Loader">
+			<FormProviderParams z:owner="Loader">
+				<tornado:CustomFormProviderParams FormClassName="Acme.Business.Waybills.WayPointsLoader.WayPointsLoaderForm, WayPointsLoader.Client" />
+			</FormProviderParams>
+			<Transitions z:owner="Loader">
+				<IUnitTransitionComponent BackendOperation="fe32b38a-6ea8-4082-85b2-5ba8674d8b55"
+				                          BackendOperationAction="AutoOperation"
+				                          Description="Проверка"
+				                          ElementId="01c7882e-8722-4696-8115-39478f5572f9"
+				                          Id="CheckData"
+				                          Name="CheckData"
+				                          Target="EndPoint"
+				                          Transited="CheckDataEventHandle" />
+				<IUnitTransitionComponent BackendOperation="fa49272d-8626-4df0-875f-ae13dc463570"
+				                          BackendOperationAction="AutoOperation"
+				                          Description="Сохранение"
+				                          ElementId="149dc73e-160b-45bf-9a6b-4e202817e18f"
+				                          Id="SaveData"
+				                          Name="SaveData"
+				                          Target="EndPoint1"
+				                          Transited="SaveDataEventHandle" />
+				<IUnitTransitionComponent BackendOperation=""
+				                          Description="Закрытие формы"
+				                          ElementId="6dbe2e96-8bf4-44da-ac9d-4e98512cf05f"
+				                          Id="Close"
+				                          Name="Close"
+				                          Role="OK"
+				                          Target="EndPoint2" />
+			</Transitions>
+		</IInteractionPointComponent>
+		<IEndPointComponent ElementId="d84dce97-765e-404a-97cd-63b7cd7706fb"
+		                    Id="EndPoint"
+		                    Name="EndPoint" />
+		<IEndPointComponent ElementId="bce06ee7-237e-4f20-beac-985739aca7b8"
+		                    Id="EndPoint1"
+		                    Name="EndPoint1" />
+		<IEndPointComponent ElementId="6e021fd5-fc98-4be3-b86a-90a07f33162a"
+		                    Id="EndPoint2"
+		                    Name="EndPoint2" />
+	</GraphPoints>
+</IUnitMetadataComponent>

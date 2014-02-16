@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="c0d60936-f7fb-4583-b73e-56f0f1e4f10e" name="Acme.Business.Waybills.Transport" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Транспортное средство</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="6d09e273-54b8-496e-a43b-c80fc6c83fb4" name="Mnemo">
+      <Description>Мнемокод транспортного средства</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Mnemo" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="f223ebdd-a2e2-49ee-a84a-0908b0b52294" name="Name">
+      <Description>Наименование транспортного средства</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Name" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="eeebb267-9679-464b-91b3-52c65c0452d8" name="Avatar">
+      <Description>Аватар транспортного средства</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.SmallPicture" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="981825e4-1765-4b72-85ff-cf57fb691172" name="Photo">
+      <Description>Фотография транспортного средства</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>False</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.BigPicture" />
+    </ClassPhysicalAttribute>
+    <ClassPhysicalAttribute id="11833fe6-d004-4cdd-acab-b591d297d65a" name="Serviceable">
+      <Description>Годность транспортного средства к эксплуатации</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Serviceable" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <ClassConstraints>
+    <ClassConstraint id="62e7a01d-372d-4984-a0bd-2b84864ff35c" name="ConstraintMnemo">
+      <Description>Ограничение на уникальность мнемокода</Description>
+      <ConstraintType value="Unique" />
+      <ClassConstraintAttributes>
+        <ClassConstraintAttribute id="f3dae241-a68b-4bb5-b5e7-dc4b0fe0a960" name="ConstraintAttributeMnemo">
+          <Description>Мнемокод</Description>
+          <RefClassPhysicalAttribute ref-name="Acme.Business.Waybills.Transport/Mnemo" />
+          <RefClassRefAttribute />
+          <ExactType>False</ExactType>
+        </ClassConstraintAttribute>
+      </ClassConstraintAttributes>
+    </ClassConstraint>
+    <ClassConstraint id="167bcbde-e8fb-49e5-bdd3-7e65aeacfd02" name="ConstraintName">
+      <Description>Ограничение на уникальность наименования</Description>
+      <ConstraintType value="Unique" />
+      <ClassConstraintAttributes>
+        <ClassConstraintAttribute id="eafab75d-e688-4be3-9b33-c68eaa1d6629" name="ConstraintAttributeName">
+          <Description>Наименование</Description>
+          <RefClassPhysicalAttribute ref-name="Acme.Business.Waybills.Transport/Name" />
+          <RefClassRefAttribute />
+          <ExactType>False</ExactType>
+        </ClassConstraintAttribute>
+      </ClassConstraintAttributes>
+    </ClassConstraint>
+  </ClassConstraints>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

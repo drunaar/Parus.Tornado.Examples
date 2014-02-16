@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9FDA3DC-0320-4222-81BA-E14889782409}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Acme.Business.Waybills</RootNamespace>
+    <AssemblyName>Waybills.Interface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Waybills.Interface.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppServer.ClientModel, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ParusCommon, Version=1.0.7401.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="R.SAT-Model, Version=1.0.7361.0, Culture=neutral, PublicKeyToken=f01847ec0268e157, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BreakPoint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BreakPoint.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceDeed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConveyanceDeed.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceDeedLinkData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConveyanceDeedLinkData.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceDeedSevice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConveyanceDeedSevice.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Waybill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Waybill.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="WaybillHelper.cs" />
+    <Compile Include="WayPoint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WayPoint.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\BigPicture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BigPicture.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Common\StreamHelper.cs" />
+    <Compile Include="Домены\Date.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Date.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\DocNumber.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocNumber.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\Guid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Guid.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\Mnemo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mnemo.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\Name.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Name.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\Note.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Note.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Домены\Serviceable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Serviceable.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\SmallPicture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmallPicture.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\TimeInterval.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeInterval.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport.metadata</DependentUpon>
+    </Compile>
+    <Compile Include="Домены\WayPointNumber.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WayPointNumber.metadata</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Mnemo.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Mnemo.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Name.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Name.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\SmallPicture.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>SmallPicture.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\BigPicture.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>BigPicture.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Serviceable.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Serviceable.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Note.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Note.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Guid.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Guid.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\Date.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Date.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\DocNumber.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>DocNumber.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\WayPointNumber.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>WayPointNumber.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Домены\TimeInterval.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>TimeInterval.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Transport.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Transport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WayPoint.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>WayPoint.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Waybill.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>Waybill.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BreakPoint.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>BreakPoint.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConveyanceDeed.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>ConveyanceDeed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceDeedLinkData.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>ConveyanceDeedLinkData.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceDeedSevice.metadata">
+      <Generator>ParusMetadataGenerator</Generator>
+      <LastGenOutput>ConveyanceDeedSevice.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

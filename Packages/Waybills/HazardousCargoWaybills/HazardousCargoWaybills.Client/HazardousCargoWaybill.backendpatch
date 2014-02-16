@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IUnitBackPatchComponent  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+                          xmlns:tornado="clr-namespace:Parus.Tornado;assembly:AppServer.Tornado.ClientModel"
+                         Id="HazardousCargoWaybill" xmlns="clr-namespace:Parus.Tornado.UnitBack.MetadataComponents.Patch;assembly:AppServer.Tornado.ClientModel">
+	<Patches z:owner="HazardousCargoWaybill">
+		<IBusinessOperationPatchComponent Id="c21f33de-1e35-4f36-a610-1d986d59c4ca"
+		                                  Identifier="c21f33de-1e35-4f36-a610-1d986d59c4ca">
+			<OperationTargets z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca">
+				<tornado:IUnitBackClassComponent ClassId="11dc78d2-d0ae-49d1-882a-14df55d6c840"
+				                                 Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+					<tornado:CrudPorts z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-11dc78d2-d0ae-49d1-882a-14df55d6c840-Read" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+				<tornado:IUnitBackClassComponent ClassId="0fe2c2c9-661b-462b-9f23-c4bdeddfa746"
+				                                 Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+					<tornado:CrudPorts z:owner="c21f33de-1e35-4f36-a610-1d986d59c4ca-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="c21f33de-1e35-4f36-a610-1d986d59c4ca-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Read" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationPatchComponent>
+		<IBusinessOperationPatchComponent Id="cb66fdfd-6127-4d35-a6f3-c99cee883948"
+		                                  Identifier="cb66fdfd-6127-4d35-a6f3-c99cee883948">
+			<OperationTargets z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948">
+				<tornado:IUnitBackClassComponent ClassId="11dc78d2-d0ae-49d1-882a-14df55d6c840"
+				                                 Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+					<tornado:CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-11dc78d2-d0ae-49d1-882a-14df55d6c840-Read" />
+						<tornado:ICrudPortComponent CrudType="Update"
+						                            Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-11dc78d2-d0ae-49d1-882a-14df55d6c840-Update" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+				<tornado:IUnitBackClassComponent ClassId="0fe2c2c9-661b-462b-9f23-c4bdeddfa746"
+				                                 Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+					<tornado:CrudPorts z:owner="cb66fdfd-6127-4d35-a6f3-c99cee883948-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="cb66fdfd-6127-4d35-a6f3-c99cee883948-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Read" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationPatchComponent>
+		<IBusinessOperationPatchComponent Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975"
+		                                  Identifier="9982ea42-ff78-4d1c-9a85-7c4d89bac975">
+			<OperationTargets z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975">
+				<tornado:IUnitBackClassComponent ClassId="11dc78d2-d0ae-49d1-882a-14df55d6c840"
+				                                 Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+					<tornado:CrudPorts z:owner="9982ea42-ff78-4d1c-9a85-7c4d89bac975-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-11dc78d2-d0ae-49d1-882a-14df55d6c840-Read" />
+						<tornado:ICrudPortComponent CrudType="Delete"
+						                            Id="9982ea42-ff78-4d1c-9a85-7c4d89bac975-11dc78d2-d0ae-49d1-882a-14df55d6c840-Delete" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationPatchComponent>
+		<IBusinessOperationPatchComponent Id="e8194944-f74c-4cc3-8694-9766840decd3"
+		                                  Identifier="e8194944-f74c-4cc3-8694-9766840decd3">
+			<OperationTargets z:owner="e8194944-f74c-4cc3-8694-9766840decd3">
+				<tornado:IUnitBackClassComponent ClassId="0fe2c2c9-661b-462b-9f23-c4bdeddfa746"
+				                                 Id="e8194944-f74c-4cc3-8694-9766840decd3-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+					<tornado:CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="e8194944-f74c-4cc3-8694-9766840decd3-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Read" />
+						<tornado:ICrudPortComponent CrudType="Update"
+						                            Id="e8194944-f74c-4cc3-8694-9766840decd3-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Update" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+				<tornado:IUnitBackClassComponent ClassId="11dc78d2-d0ae-49d1-882a-14df55d6c840"
+				                                 Id="e8194944-f74c-4cc3-8694-9766840decd3-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+					<tornado:CrudPorts z:owner="e8194944-f74c-4cc3-8694-9766840decd3-11dc78d2-d0ae-49d1-882a-14df55d6c840">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="e8194944-f74c-4cc3-8694-9766840decd3-11dc78d2-d0ae-49d1-882a-14df55d6c840-Read" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationPatchComponent>
+		<IBusinessOperationPatchComponent Id="65ac4c10-bb11-4022-8559-142c558b6c2d"
+		                                  Identifier="65ac4c10-bb11-4022-8559-142c558b6c2d">
+			<OperationTargets z:owner="65ac4c10-bb11-4022-8559-142c558b6c2d">
+				<tornado:IUnitBackClassComponent ClassId="0fe2c2c9-661b-462b-9f23-c4bdeddfa746"
+				                                 Id="65ac4c10-bb11-4022-8559-142c558b6c2d-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+					<tornado:CrudPorts z:owner="65ac4c10-bb11-4022-8559-142c558b6c2d-0fe2c2c9-661b-462b-9f23-c4bdeddfa746">
+						<tornado:ICrudPortComponent CrudType="Read"
+						                            Id="65ac4c10-bb11-4022-8559-142c558b6c2d-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Read" />
+						<tornado:ICrudPortComponent CrudType="Delete"
+						                            Id="65ac4c10-bb11-4022-8559-142c558b6c2d-0fe2c2c9-661b-462b-9f23-c4bdeddfa746-Delete" />
+					</tornado:CrudPorts>
+				</tornado:IUnitBackClassComponent>
+			</OperationTargets>
+		</IBusinessOperationPatchComponent>
+	</Patches>
+</IUnitBackPatchComponent>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Class id="8ea8dbdc-048b-4f99-ac2c-e9faf1b14cd0" name="Acme.Business.Waybills.ConveyanceDeedLinkData" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Данные для связи путевого листа и акта передачи груза</Description>
+  <LifeTime value="Transaction" />
+  <IsAbstract>False</IsAbstract>
+  <IsPersistent>True</IsPersistent>
+  <BaseClass />
+  <HierarchyLink />
+  <ClassPhysicalAttributes>
+    <ClassPhysicalAttribute id="b087f660-64a1-4e6b-9a6a-d2a6642f3cf2" name="Date">
+      <Description>Дата+время установленной связи</Description>
+      <ReadOnly>False</ReadOnly>
+      <NotNull>True</NotNull>
+      <Cloneable>True</Cloneable>
+      <LoadGroup>
+      </LoadGroup>
+      <Domain ref-name="Acme.Business.Waybills.Date" />
+    </ClassPhysicalAttribute>
+  </ClassPhysicalAttributes>
+  <CatalogLink />
+  <LicenseId />
+  <MasterClass />
+  <DisplayFormat>{$Description$}</DisplayFormat>
+  <ClassCreateMethods>
+    <ClassCreateMethod id="00000000-0000-0000-0000-000000000000" name="Default">
+      <Description>Default create method</Description>
+      <Base />
+      <ClassCreateMethodParameters />
+    </ClassCreateMethod>
+  </ClassCreateMethods>
+</Class>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unitModelDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.75, 8.5" name="HazardousCargoWaybill">
+  <unitModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill" />
+  <nestedChildShapes>
+    <dataRetrievePointShape Id="9201c854-fcdc-43fc-a5c3-daf7b1bae5e3" absoluteBounds="1.75, 7.125, 2.125, 0.5">
+      <dataRetrievePointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Waybill_Data" />
+    </dataRetrievePointShape>
+    <dataRetrievePointShape Id="ac0eb2f4-4562-4bc8-a926-4dcf0b9c3e7b" absoluteBounds="4.375, 7.125, 2.125, 0.5">
+      <dataRetrievePointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/BreakPoint_Data" />
+    </dataRetrievePointShape>
+    <startPointShape Id="4add49a7-bf4f-4e44-9f0f-5a9fdbfaec96" absoluteBounds="0.5, 1.25, 0.25, 0.25">
+      <startPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Start" />
+      <relativeChildShapes />
+    </startPointShape>
+    <interactionPointShape Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" absoluteBounds="1.75, 1.125, 1.375, 5.625">
+      <interactionPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse" />
+    </interactionPointShape>
+    <interactionPointShape Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" absoluteBounds="4.625, 1, 1.25, 3">
+      <interactionPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill" />
+    </interactionPointShape>
+    <endPointShape Id="d0746e1d-3fc3-4c9b-bd32-dd689e3f40ed" absoluteBounds="7.75, 6.375, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse.DeleteWaybill.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="00d7abf7-216b-4ab6-856b-f8f27613f3cf" absoluteBounds="8.25, 1, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill.Ok.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="8806ba13-c97e-472f-a75d-bc07f169ab53" absoluteBounds="8.25, 1.5, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill.Cancel.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <interactionPointShape Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" absoluteBounds="8.875, 2.25, 1.375, 3.25">
+      <interactionPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditBreakPoint" />
+    </interactionPointShape>
+    <endPointShape Id="59ebe89f-bb36-41d9-8f3a-4407a4331651" absoluteBounds="7.75, 5.625, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse.DeleteBreakPoint.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="9507e194-6e34-4b06-93b9-e100c824f593" absoluteBounds="12.625, 2.625, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditBreakPoint.Ok.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="600f24be-056c-474e-b68d-a6fdee79d9d6" absoluteBounds="12.625, 3.375, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditBreakPoint.Cancel.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <endPointShape Id="1facf104-d645-4855-8e3b-d2e6622eae87" absoluteBounds="7.75, 3.625, 0.25, 0.25">
+      <endPointModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill.DeleteBreakPoint.End" />
+      <relativeChildShapes />
+    </endPointShape>
+    <graphConnector edgePoints="[(0.75 : 1.375); (1.75 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Start/Initialize@Start" />
+      <relativeChildShapes />
+      <nodes>
+        <startPointShapeMoniker Id="4add49a7-bf4f-4e44-9f0f-5a9fdbfaec96" />
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 1.76741163708102); (4.625 : 1.76741163708102)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/AddWaybill@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 3.32991163708102); (4.625 : 3.32991163708102)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/EditWaybill@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 2.54866163708102); (4.625 : 2.54866163708102)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/CloneWaybill@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 6.5); (7.75 : 6.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/DeleteWaybill@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <endPointShapeMoniker Id="d0746e1d-3fc3-4c9b-bd32-dd689e3f40ed" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 4.7179209391276); (8.875 : 4.7179209391276)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/AddBreakPoint@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 4.3277104695638); (8.875 : 4.3277104695638)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/EditBreakPoint@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 5.11458333333333); (8.875 : 5.11458333333333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/CloneBreakPoint@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(3.125 : 5.75); (7.75 : 5.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/Browse/DeleteBreakPoint@Browse" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="3299bdbe-72bc-4ad3-b075-13d100b194f4" />
+        <endPointShapeMoniker Id="59ebe89f-bb36-41d9-8f3a-4407a4331651" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 1.125); (8.25 : 1.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/Ok@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <endPointShapeMoniker Id="00d7abf7-216b-4ab6-856b-f8f27613f3cf" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 1.625); (8.25 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/Cancel@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <endPointShapeMoniker Id="8806ba13-c97e-472f-a75d-bc07f169ab53" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 3.75); (7.75 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/DeleteBreakPoint@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <endPointShapeMoniker Id="1facf104-d645-4855-8e3b-d2e6622eae87" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 2.93489583333333); (8.875 : 2.93489583333333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/AddBreakPoint@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 2.52994791666667); (8.875 : 2.52994791666667)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/EditBreakPoint@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(5.875 : 3.2578125); (8.875 : 3.2578125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditWaybill/CloneBreakPoint@EditWaybill" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="224f29ef-5d06-4c11-bd2c-c4f0a85d27cb" />
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(10.25 : 2.75); (12.625 : 2.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditBreakPoint/Ok@EditBreakPoint" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+        <endPointShapeMoniker Id="9507e194-6e34-4b06-93b9-e100c824f593" />
+      </nodes>
+    </graphConnector>
+    <graphConnector edgePoints="[(10.25 : 3.5); (12.625 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <unitTransitionModelMoniker name="/Acme.Business.Waybills.HazardousCargoWaybills.HazardousCargoWaybill/EditBreakPoint/Cancel@EditBreakPoint" />
+      <relativeChildShapes />
+      <nodes>
+        <interactionPointShapeMoniker Id="d09c9495-0d8f-4f14-b2a0-41e39c160d23" />
+        <endPointShapeMoniker Id="600f24be-056c-474e-b68d-a6fdee79d9d6" />
+      </nodes>
+    </graphConnector>
+  </nestedChildShapes>
+</unitModelDiagram>

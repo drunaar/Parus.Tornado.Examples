@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="ee319c76-bbd7-4bd2-b604-29a3b9df867b" name="Acme.Business.Waybills.Name" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Наименование</Description>
+  <DataType value="String" />
+  <Format>255</Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>

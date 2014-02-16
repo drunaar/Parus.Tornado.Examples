@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?zml version="1.21"?>
+<IForm  xmlns:z="http://parus.com/Tornado/Zml/1.1"
+       Id="m_MnemoNameEditForm"
+       MinSize="70.1146 mm; 14.0229 mm"
+       Size="70.1146 mm; 14.0229 mm" xmlns="clr-namespace:Parus.SmartClient.Controls;assembly:SmartClient.Model">
+	<BindKey z:owner="m_BindingProvider"></BindKey>
+	<Layout z:owner="LayoutManager">LayoutManager3</Layout>
+	<LayoutManager z:owner="m_MnemoNameEditForm">
+		<ILayoutManagerProvider Id="LayoutManager">
+			<ITableLayout Id="LayoutManager3">
+				<Columns z:owner="LayoutManager3">
+					<ILayoutColumn Percent="50"
+					               SizeType="Absolute"
+					               Width="27.7812 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+					<ILayoutColumn Percent="100"
+					               SizeType="Percent"
+					               Width="0 mm">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutColumn>
+				</Columns>
+				<Rows z:owner="LayoutManager3">
+					<ILayoutRow Height="7 mm"
+					            Percent="15.89"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+					<ILayoutRow Height="7 mm"
+					            Percent="84.11"
+					            SizeType="Absolute">
+						<BindKey z:owner="m_BindingProvider"></BindKey>
+						<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+					</ILayoutRow>
+				</Rows>
+			</ITableLayout>
+		</ILayoutManagerProvider>
+	</LayoutManager>
+	<Margins z:owner="LayoutManager3">0 mm, 0 mm, 0 mm, 0 mm</Margins>
+	<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+	<IEdit Id="m_Edit1"
+	       MaxChars="255"
+	       TabIndex="3"
+	       TabStop="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider">ctx:Text:Context.CurrentObject/Name</BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">1,1</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">5.0271 mm</Height>
+		<Left z:owner="LayoutManager3">28.8396 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">7.9375 mm</Top>
+		<UseDefaultReportingStrategy z:owner="m_Validator">True</UseDefaultReportingStrategy>
+		<ValidationEnabled z:owner="m_Validator">True</ValidationEnabled>
+		<ValidationStrategy z:owner="m_Validator">m_RequiredValidationStrategy7</ValidationStrategy>
+		<Width z:owner="LayoutManager3">40.2167 mm</Width>
+	</IEdit>
+	<ILabel Id="m_Label1"
+	        TabIndex="2"
+	        TabStop="False"
+	        Text="Наименование:"
+	        WrapText="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,1</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">4.7625 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">7.9375 mm</Top>
+		<Width z:owner="LayoutManager3">25.6646 mm</Width>
+	</ILabel>
+	<IEdit Id="m_Edit"
+	       MaxChars="50"
+	       TabIndex="1"
+	       TabStop="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider">ctx:Text:Context.CurrentObject/Mnemo</BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">1,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">5.0271 mm</Height>
+		<Left z:owner="LayoutManager3">28.8396 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">1.0583 mm</Top>
+		<UseDefaultReportingStrategy z:owner="m_Validator">True</UseDefaultReportingStrategy>
+		<ValidationEnabled z:owner="m_Validator">True</ValidationEnabled>
+		<ValidationStrategy z:owner="m_Validator">m_RequiredValidationStrategy3</ValidationStrategy>
+		<Width z:owner="LayoutManager3">40.2167 mm</Width>
+	</IEdit>
+	<ILabel Id="m_Label"
+	        TabIndex="0"
+	        TabStop="False"
+	        Text="Мнемокод:"
+	        WrapText="True">
+		<Anchor z:owner="LayoutManager3">Top, Left</Anchor>
+		<BindKey z:owner="m_BindingProvider"></BindKey>
+		<CellMargins z:owner="LayoutManager3">1.0 mm, 1.0 mm, 1.0 mm, 1.0 mm</CellMargins>
+		<CellPosition z:owner="LayoutManager3">0,0</CellPosition>
+		<ColumnSpan z:owner="LayoutManager3">1</ColumnSpan>
+		<Dock z:owner="LayoutManager3">Fill</Dock>
+		<Height z:owner="LayoutManager3">4.7625 mm</Height>
+		<Left z:owner="LayoutManager3">1.0583 mm</Left>
+		<RowSpan z:owner="LayoutManager3">1</RowSpan>
+		<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		<Top z:owner="LayoutManager3">1.0583 mm</Top>
+		<Width z:owner="LayoutManager3">25.6646 mm</Width>
+	</ILabel>
+	<IBindingProvider Id="m_BindingProvider" />
+	<IValidator DefaultReportingStrategy="m_InvalidStyleReportingStrategy3"
+	            Id="m_Validator">
+		<IRequiredValidationStrategy ErrorTemplate=""
+		                             Id="m_RequiredValidationStrategy7"
+		                             Type="Error">
+			<BindKey z:owner="m_BindingProvider"></BindKey>
+			<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		</IRequiredValidationStrategy>
+		<IRequiredValidationStrategy ErrorTemplate=""
+		                             Id="m_RequiredValidationStrategy3"
+		                             Type="Error">
+			<BindKey z:owner="m_BindingProvider"></BindKey>
+			<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		</IRequiredValidationStrategy>
+		<IInvalidStyleReportingStrategy Id="m_InvalidStyleReportingStrategy3">
+			<BindKey z:owner="m_BindingProvider"></BindKey>
+			<SelectedObjectContext z:owner="m_BindingProvider"></SelectedObjectContext>
+		</IInvalidStyleReportingStrategy>
+	</IValidator>
+</IForm>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Domain id="8262800c-b746-40e8-9cbb-8d69b740257d" name="Acme.Business.Waybills.BigPicture" version="1.6" xmlns="http://www.parus.com/Tornado/Metadata/1.4">
+  <Description>Картинка большого размера</Description>
+  <DataType value="Stream" />
+  <Format>
+  </Format>
+  <DefaultValue>
+  </DefaultValue>
+</Domain>
