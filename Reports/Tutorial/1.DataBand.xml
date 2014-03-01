@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Зуденковы</Author>
+  <LastAuthor>Зуденковы</LastAuthor>
+  <Created>2014-02-19T17:07:56Z</Created>
+  <LastSaved>2014-02-19T18:44:07Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7710</WindowHeight>
+  <WindowWidth>19875</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>330</WindowTopY>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Page1">
+  <Names>
+   <NamedRange ss:Name="m_DataBand" ss:RefersTo="=Page1!R3C1:R9C9"/>
+   <NamedRange ss:Name="m_Date" ss:RefersTo="=Page1!R5C3:R5C4"/>
+   <NamedRange ss:Name="m_Number" ss:RefersTo="=Page1!R5C1:R5C2"/>
+   <NamedRange ss:Name="m_Vessel" ss:RefersTo="=Page1!R5C5:R5C6"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="4" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Номер</Data><NamedCell
+      ss:Name="m_DataBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Дата</Data><NamedCell
+      ss:Name="m_DataBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Судно</Data><NamedCell
+      ss:Name="m_DataBand"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Parameters">
+  <Names>
+   <NamedRange ss:Name="DataBindings" ss:RefersTo="=Parameters!R16:R18"/>
+   <NamedRange ss:Name="DataSource_4db8d9c136fd41688d2f23c14aa45919Parameters"
+    ss:RefersTo="=Parameters!R14:R15"/>
+   <NamedRange ss:Name="DataSourceInformant" ss:RefersTo="=Parameters!R3:R4"/>
+   <NamedRange ss:Name="DataSources" ss:RefersTo="=Parameters!R12:R13"/>
+   <NamedRange ss:Name="FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39cParameters"
+    ss:RefersTo="=Parameters!R30:R31"/>
+   <NamedRange ss:Name="Objects" ss:RefersTo="=Parameters!R7:R11"/>
+   <NamedRange ss:Name="PackagesSelector" ss:RefersTo="=Parameters!R5:R6"/>
+   <NamedRange ss:Name="ReportParameters" ss:RefersTo="=Parameters!R22:R23"/>
+   <NamedRange ss:Name="Scripts" ss:RefersTo="=Parameters!R26:R28"/>
+   <NamedRange ss:Name="StoredReportProcedures" ss:RefersTo="=Parameters!R20:R21"/>
+   <NamedRange ss:Name="Usings" ss:RefersTo="=Parameters!R24:R25"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="28" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="3" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_DataBand</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=Number</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldType=String</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_DataBand</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=Vessel</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldType=String</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">packageMap</Data><NamedCell
+      ss:Name="PackagesSelector"/></Cell>
+    <Cell><Data ss:Type="String">AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCOYBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dW10BAAAACQIAAAADAAAACQMAAAAEAgAAAJIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuR2VuZXJpY0VxdWFsaXR5Q29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0AAAAABwMAAAAAAQAAAAEAAAAD5AFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0E/P///+QBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAgAAAANrZXkFdmFsdWUBAQYFAAAAOydXYXliaWxscycgW2I1YzVkMWM4LWQ5OGEtNDgxNC04NDIzLTc2YjM0ZWVlN2VmMl0gVjoxLjAuMC4wBgYAAAA/QzpcV29ya1xHaXRIdWJcVG9ybmFkb0V4YW1wbGVzXFRhcmdldFxTZXJ2ZXJccGFja3NcV2F5YmlsbHMucGtnCw==</Data><NamedCell
+      ss:Name="PackagesSelector"/></Cell>
+   </Row>
+   <Row ss:Index="7" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IDataBand,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_DataBand</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=Page1</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=DataSource</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">ParentRelationName=Waybills</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DataBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Text=Номер</Data><NamedCell ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Date</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DataBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Text=Дата</Data><NamedCell ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DataBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:Index="12" ss:AutoFitHeight="0" ss:Height="409.5">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.Data.DataProcedureDescription, Parus.Reporting.Model</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ProcedureCode={&#13;&#10; var ds = CreateDataSet();&#13;&#10; var tbl = ds.Tables[&quot;Waybills&quot;];&#13;&#10;&#13;&#10; try {&#13;&#10;  tbl.BeginLoadData();&#13;&#10;  var query = Manager.CompileQuery(&quot;SELECT Identity FROM [Acme.Business.Waybills.Waybill];&quot;);&#13;&#10; &#13;&#10;  foreach(var obj in query.Execute()) {&#13;&#10;   var waybill = (IWaybill) obj;&#13;&#10;   tbl.Rows.Add(waybill.Number.Value,&#13;&#10;          waybill.Date.Value,&#13;&#10;          waybill.Transport.Name.Value);&#13;&#10;  }&#13;&#10; } &#13;&#10; finally {&#13;&#10;  tbl.EndLoadData();&#13;&#10; }&#13;&#10;&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">EmptyDatasetProcedureCode={&#13;&#10; var ds = CreateDataSet();&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Name=DataSource</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Metadata=&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;?zml version=&quot;1.21&quot;?&gt;&#13;&#10;&lt;DataSourceMetadata  xmlns:z=&quot;http://parus.com/Tornado/Zml/1.1&quot;&#13;&#10;                    Id=&quot;20b96552f64e41099bbd9d41b52292e8&quot; xmlns=&quot;clr-namespace:Parus.Reporting.Model.Data.Metadata;assembly:Parus.Reporting.Model&quot;&gt;&#13;&#10;	&lt;DataTables z:owner=&quot;20b96552f64e41099bbd9d41b52292e8&quot; /&gt;&#13;&#10;	&lt;Relations z:owner=&quot;20b96552f64e41099bbd9d41b52292e8&quot; /&gt;&#13;&#10;&lt;/DataSourceMetadata&gt;</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Parameters=DataSource_4db8d9c136fd41688d2f23c14aa45919Parameters</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Id=DataSource_4db8d9c136fd41688d2f23c14aa45919</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+   </Row>
+   <Row ss:Index="16" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_DataBand[&quot;Number&quot;]</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Date</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_DataBand[&quot;Date&quot;].ToString()</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_DataBand[&quot;Vessel&quot;]</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:Index="20" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ImportProcedure=</Data><NamedCell
+      ss:Name="StoredReportProcedures"/></Cell>
+    <Cell><Data ss:Type="String">ExportProcedure=</Data><NamedCell
+      ss:Name="StoredReportProcedures"/></Cell>
+   </Row>
+   <Row ss:Index="24" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name=Waybills,Id={b5c5d1c8-d98a-4814-8423-76b34eee7ef2},Ver=1.0.0.0</Data><NamedCell
+      ss:Name="Usings"/></Cell>
+   </Row>
+   <Row ss:Index="26" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">System.Reflection.AssemblyName</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Waybills.Server</Data><NamedCell ss:Name="Scripts"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">System.String</Data><NamedCell ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Acme.Business.Waybills</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.5">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.FunctionDescription</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Name=CreateDataSet</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Parameters=FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39cParameters</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Body={&#13;&#10; DataSet ds = new DataSet();&#13;&#10; var tbl  = ds.Tables.Add(&quot;Waybills&quot;);&#13;&#10;&#13;&#10; tbl.Columns.Add(&quot;Number&quot;, typeof(string));&#13;&#10; tbl.Columns.Add(&quot;Date&quot;, typeof(DateTime));&#13;&#10; tbl.Columns.Add(&quot;Vessel&quot;, typeof(string));&#13;&#10;&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">ReturnType=System.Data.DataSet</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Id=FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39c</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetVeryHidden</Visible>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
