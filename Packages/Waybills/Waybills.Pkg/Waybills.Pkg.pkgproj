@@ -102,6 +102,11 @@
       <FullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</FullName>
       <Assembly>AppServer.Tornado.Deploy</Assembly>
     </Ext>
+    <Ext Include="Waybills.Pkg.pkgproj">
+      <DisplayName>Parus.Net.Deploy.Compiler.Extenders.ReportsExtender</DisplayName>
+      <FullName>Parus.Net.Deploy.Compiler.Extenders.ReportsExtender</FullName>
+      <Assembly>Parus.Net.Deploy.Compiler</Assembly>
+    </Ext>
   </ItemGroup>
   <ItemGroup>
     <PkgFile Include="..\..\..\Parus\TornadoLib\s7support.pkg" />
@@ -111,12 +116,19 @@
     <ItemExtFile Include=".\ExtMenu.InitData.linkunit">
       <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
     </ItemExtFile>
-  </ItemGroup>
-  <ItemGroup>
     <ItemExtFile Include=".\Workplace.InitData.xml">
       <ExtFullName>Parus.Net.Deploy.Compiler.Extenders.DBTransformsExtender</ExtFullName>
     </ItemExtFile>
+    <ItemExtFile Include=".\Отчёты\Список путевых листов.xml">
+      <ExtFullName>Parus.Net.Deploy.Compiler.Extenders.ReportsExtender</ExtFullName>
+      <DisplayName>Список путевых листов</DisplayName>
+      <Description>Список путевых листов</Description>
+      <Data>19866448-d71e-496b-bb8e-29c711b8762b</Data>
+    </ItemExtFile>
     <ItemExtFile Include="Waybills.Client.linkunit">
+      <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
+    </ItemExtFile>
+    <ItemExtFile Include=".\Reports.linkunit">
       <ExtFullName>Parus.Tornado.Deploy.Compiler.LinkUnitsExtender</ExtFullName>
     </ItemExtFile>
   </ItemGroup>

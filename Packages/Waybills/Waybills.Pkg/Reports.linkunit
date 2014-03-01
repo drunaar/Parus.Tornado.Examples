@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinkedUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.parus.com/Tornado/Deploy/LinkUnitsXsd.xsd">
+  <Link id="816b2f33-18bd-4c97-8e0d-79f8a6a23a39" displayname="Отчёты/Список" order="0" role="" host-type="Child">
+    <link-to>Acme.Business.Waybills.WaybillUnit, Waybills.Client</link-to>
+    <link-to-point>Browse</link-to-point>
+    <link-to-point-discriminant>Waybill_Data</link-to-point-discriminant>
+    <call-unit>Parus.SmartClient.Tornado.AttachedReportsUnit, SmartClient.Tornado</call-unit>
+    <call-unit-point>StartPoint</call-unit-point>
+    <post-refresh-strategy>None</post-refresh-strategy>
+    <parameters>
+      <parameter>
+        <name>AttachedReports.ReportName</name>
+        <provider_type>SetConstantArgument</provider_type>
+        <provider_arg>Список путевых листов</provider_arg>
+      </parameter>
+      <!--
+      <parameter>
+        <name>AttachedReports.ParamsForm</name>
+        <provider_type>SetConstantArgument</provider_type>
+        <provider_arg/>
+      </parameter>
+      -->
+      <parameter>
+        <name>AttachedReports.AllowAsync</name>
+        <provider_type>SetConstantArgument</provider_type>
+        <provider_arg>true</provider_arg>
+      </parameter>
+      
+      <parameter>
+        <name>AttachedReports.ParameterName0</name>
+        <provider_type>SetConstantArgument</provider_type>
+        <provider_arg>SelectedWaybillId</provider_arg>
+      </parameter>
+      <parameter>
+        <name>AttachedReports.Parameter0</name>
+        <provider_type>FocusedRecordId</provider_type>
+        <provider_arg/>
+      </parameter>
+    </parameters>
+  </Link>
+ </LinkedUnits>
