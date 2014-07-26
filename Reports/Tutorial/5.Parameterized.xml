@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Зуденковы</Author>
+  <LastAuthor>Зуденковы</LastAuthor>
+  <Created>2014-02-19T17:07:56Z</Created>
+  <LastSaved>2014-07-26T20:01:52Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7710</WindowHeight>
+  <WindowWidth>19875</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>330</WindowTopY>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Interior ss:Color="#C2D69A" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Page1">
+  <Names>
+   <NamedRange ss:Name="m_Arrival" ss:RefersTo="=Page1!R7C3:R7C4"/>
+   <NamedRange ss:Name="m_DataBand1" ss:RefersTo="=Page1!R6C1:R7C6"/>
+   <NamedRange ss:Name="m_Date" ss:RefersTo="=Page1!R5C3:R5C4"/>
+   <NamedRange ss:Name="m_Departure" ss:RefersTo="=Page1!R7C5:R7C6"/>
+   <NamedRange ss:Name="m_DetailBand" ss:RefersTo="=Page1!R5C1:R8C6"/>
+   <NamedRange ss:Name="m_DetailBand1" ss:RefersTo="=Page1!R7C1:R7C6"/>
+   <NamedRange ss:Name="m_GroupBand" ss:RefersTo="=Page1!R3C1:R9C9"/>
+   <NamedRange ss:Name="m_Number" ss:RefersTo="=Page1!R5C1:R5C2"/>
+   <NamedRange ss:Name="m_Point" ss:RefersTo="=Page1!R7C1:R7C2"/>
+   <NamedRange ss:Name="m_Vessel" ss:RefersTo="=Page1!R5C5:R5C6"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="6" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="4" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Номер</Data><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Дата</Data><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Судно</Data><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+   </Row>
+   <Row ss:Index="6" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="1" ss:StyleID="s65"><Data ss:Type="String">Пункт</Data><NamedCell
+      ss:Name="m_DataBand1"/><NamedCell ss:Name="m_DetailBand"/><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s65"><Data ss:Type="String">Прибытие</Data><NamedCell
+      ss:Name="m_DataBand1"/><NamedCell ss:Name="m_DetailBand"/><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s65"><Data ss:Type="String">Отбытие</Data><NamedCell
+      ss:Name="m_DataBand1"/><NamedCell ss:Name="m_DetailBand"/><NamedCell
+      ss:Name="m_GroupBand"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Parameters">
+  <Names>
+   <NamedRange ss:Name="DataBindings" ss:RefersTo="=Parameters!R23:R28"/>
+   <NamedRange ss:Name="DataSource_4db8d9c136fd41688d2f23c14aa45919Parameters"
+    ss:RefersTo="=Parameters!R21:R22"/>
+   <NamedRange ss:Name="DataSourceInformant" ss:RefersTo="=Parameters!R3:R5"/>
+   <NamedRange ss:Name="DataSources" ss:RefersTo="=Parameters!R19:R20"/>
+   <NamedRange ss:Name="FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39cParameters"
+    ss:RefersTo="=Parameters!R40:R41"/>
+   <NamedRange ss:Name="m_GroupBandGrouping" ss:RefersTo="=Parameters!R42:R43"/>
+   <NamedRange ss:Name="Objects" ss:RefersTo="=Parameters!R8:R18"/>
+   <NamedRange ss:Name="PackagesSelector" ss:RefersTo="=Parameters!R6:R7"/>
+   <NamedRange ss:Name="ReportParameters" ss:RefersTo="=Parameters!R32:R33"/>
+   <NamedRange ss:Name="Scripts" ss:RefersTo="=Parameters!R36:R38"/>
+   <NamedRange ss:Name="StoredReportProcedures" ss:RefersTo="=Parameters!R30:R31"/>
+   <NamedRange ss:Name="Usings" ss:RefersTo="=Parameters!R34:R35"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="42" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="3" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_GroupBand</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=WaybillNumber</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldType=String</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_GroupBand</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=Vessel</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldType=String</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Point</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_DataBand1</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=Point</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+    <Cell><Data ss:Type="String">FieldType=String</Data><NamedCell
+      ss:Name="DataSourceInformant"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">packageMap</Data><NamedCell
+      ss:Name="PackagesSelector"/></Cell>
+    <Cell><Data ss:Type="String">AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCOYBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dW10BAAAACQIAAAADAAAACQMAAAAEAgAAAJIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuR2VuZXJpY0VxdWFsaXR5Q29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0AAAAABwMAAAAAAQAAAAEAAAAD5AFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0E/P///+QBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAgAAAANrZXkFdmFsdWUBAQYFAAAAOydXYXliaWxscycgW2I1YzVkMWM4LWQ5OGEtNDgxNC04NDIzLTc2YjM0ZWVlN2VmMl0gVjoxLjAuMC4wBgYAAAA/QzpcV29ya1xHaXRIdWJcVG9ybmFkb0V4YW1wbGVzXFRhcmdldFxTZXJ2ZXJccGFja3NcV2F5YmlsbHMucGtnCw==</Data><NamedCell
+      ss:Name="PackagesSelector"/></Cell>
+   </Row>
+   <Row ss:Index="8" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Text=Номер</Data><NamedCell ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Date</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Text=Дата</Data><NamedCell ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IDetailBand,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_DetailBand</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_GroupBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IDataBand,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_DataBand1</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=m_GroupBand</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">ParentRelationName=Group</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IDetailBand,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_DetailBand1</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DataBand1</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Point</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand1</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Arrival</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand1</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IText,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_Departure</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=m_DetailBand1</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.IGroupBand,Parus.Reporting.Model</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">m_GroupBand</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Parent=Page1</Data><NamedCell ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">DataSourceName=DataSource</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">ParentRelationName=Routes</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+    <Cell><Data ss:Type="String">Grouping=m_GroupBandGrouping</Data><NamedCell
+      ss:Name="Objects"/></Cell>
+   </Row>
+   <Row ss:Index="19" ss:AutoFitHeight="0" ss:Height="409.5">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.Data.DataProcedureDescription, Parus.Reporting.Model</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">ProcedureCode={&#13;&#10; var ds = CreateDataSet();&#13;&#10; var rtb = ds.Tables[&quot;Routes&quot;];&#13;&#10;&#13;&#10; try {&#13;&#10;  rtb.BeginLoadData();&#13;&#10;  var vesselIds = Parameters[&quot;SelectedVessels&quot;]&#13;&#10;         .ToString()&#13;&#10;         .Split(new Char[] {';'})&#13;&#10;         .Select(i =&gt; IdentityImpl.Parse(i));&#13;&#10;  var waybillsFrom = (DateTime)Parameters[&quot;WaybillsFrom&quot;];&#13;&#10;  var query = Manager.CompileQuery(&quot;SELECT Identity FROM [Acme.Business.Waybills.Waybill];&quot;);&#13;&#10; &#13;&#10;  foreach(var obj in query.Execute()) {&#13;&#10;   var waybill = (IWaybill) obj;&#13;&#10;  &#13;&#10;   if (!vesselIds.Contains(((IIdentifiableObject)waybill.Transport).Id) ||&#13;&#10;        waybill.Date.Value &lt; waybillsFrom)&#13;&#10;   continue;&#13;&#10;  &#13;&#10;   foreach(var rpoint in waybill.Route.Cast&lt;IBreakPoint&gt;().OrderBy(rp =&gt; rp.Number.Value)) {&#13;&#10;     rtb.Rows.Add(waybill.Number.Value,&#13;&#10;       waybill.Date.Value,&#13;&#10;       waybill.Transport.Name.Value,&#13;&#10;       rpoint.Number.Value,&#13;&#10;       rpoint.Point.Mnemo.Value,&#13;&#10;       rpoint.ArrivalDate == null ? DateTime.MinValue : rpoint.ArrivalDate.Value,&#13;&#10;       rpoint.DepartureDate == null ? DateTime.MinValue : rpoint.DepartureDate.Value);&#13;&#10;   }&#13;&#10;  }&#13;&#10; } &#13;&#10; finally {&#13;&#10;  rtb.EndLoadData();&#13;&#10; }&#13;&#10;&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">EmptyDatasetProcedureCode={&#13;&#10; var ds = CreateDataSet();&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Name=DataSource</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Metadata=&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;?zml version=&quot;1.21&quot;?&gt;&#13;&#10;&lt;DataSourceMetadata  xmlns:z=&quot;http://parus.com/Tornado/Zml/1.1&quot;&#13;&#10;                    Id=&quot;20b96552f64e41099bbd9d41b52292e8&quot; xmlns=&quot;clr-namespace:Parus.Reporting.Model.Data.Metadata;assembly:Parus.Reporting.Model&quot;&gt;&#13;&#10;	&lt;DataTables z:owner=&quot;20b96552f64e41099bbd9d41b52292e8&quot; /&gt;&#13;&#10;	&lt;Relations z:owner=&quot;20b96552f64e41099bbd9d41b52292e8&quot; /&gt;&#13;&#10;&lt;/DataSourceMetadata&gt;</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Parameters=DataSource_4db8d9c136fd41688d2f23c14aa45919Parameters</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+    <Cell><Data ss:Type="String">Id=DataSource_4db8d9c136fd41688d2f23c14aa45919</Data><NamedCell
+      ss:Name="DataSources"/></Cell>
+   </Row>
+   <Row ss:Index="23" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Number</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_GroupBand[&quot;WaybillNumber&quot;]</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Date</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_GroupBand[&quot;WaybillDate&quot;].ToString()</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Vessel</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_GroupBand[&quot;Vessel&quot;]</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Point</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">Text=m_DataBand1[&quot;Point&quot;]</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Arrival</Data><NamedCell ss:Name="DataBindings"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Text=((DateTime)m_DataBand1[&quot;Arrival&quot;]) == DateTime.MinValue&#13;&#10;  ? &quot;-&quot;&#13;&#10;  : ((DateTime)m_DataBand1[&quot;Arrival&quot;]).ToString(&quot;d&quot;)</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">m_Departure</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Text=((DateTime)m_DataBand1[&quot;Departure&quot;]) == DateTime.MinValue&#13;&#10;  ? &quot;-&quot;&#13;&#10;  : ((DateTime)m_DataBand1[&quot;Departure&quot;]).ToString(&quot;d&quot;)</Data><NamedCell
+      ss:Name="DataBindings"/></Cell>
+    <Cell><Data ss:Type="String">NullValue=</Data><NamedCell ss:Name="DataBindings"/></Cell>
+   </Row>
+   <Row ss:Index="30" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ImportProcedure=</Data><NamedCell
+      ss:Name="StoredReportProcedures"/></Cell>
+    <Cell><Data ss:Type="String">ExportProcedure=</Data><NamedCell
+      ss:Name="StoredReportProcedures"/></Cell>
+   </Row>
+   <Row ss:Index="32" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Выделенный суда</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+    <Cell><Data ss:Type="String">System.String</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+    <Cell><Data ss:Type="String">SelectedVessels</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Начиная с</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+    <Cell><Data ss:Type="String">System.DateTime</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+    <Cell><Data ss:Type="String">WaybillsFrom</Data><NamedCell
+      ss:Name="ReportParameters"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name=Waybills,Id={b5c5d1c8-d98a-4814-8423-76b34eee7ef2},Ver=1.0.0.0</Data><NamedCell
+      ss:Name="Usings"/></Cell>
+   </Row>
+   <Row ss:Index="36" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">System.Reflection.AssemblyName</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Waybills.Server</Data><NamedCell ss:Name="Scripts"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">System.String</Data><NamedCell ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Acme.Business.Waybills</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">System.Linq</Data><NamedCell ss:Name="Scripts"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.5">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.FunctionDescription</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Name=CreateDataSet</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Parameters=FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39cParameters</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Body={&#13;&#10; DataSet ds = new DataSet();&#13;&#10; var rtb  = ds.Tables.Add(&quot;Routes&quot;);&#13;&#10;&#13;&#10; rtb.Columns.Add(&quot;WaybillNumber&quot;, typeof(string));&#13;&#10; rtb.Columns.Add(&quot;WaybillDate&quot;, typeof(DateTime));&#13;&#10; rtb.Columns.Add(&quot;Vessel&quot;, typeof(string));&#13;&#10; rtb.Columns.Add(&quot;Number&quot;, typeof(decimal));&#13;&#10; rtb.Columns.Add(&quot;Point&quot;, typeof(string));&#13;&#10; rtb.Columns.Add(&quot;Arrival&quot;, typeof(DateTime));&#13;&#10; rtb.Columns.Add(&quot;Departure&quot;, typeof(DateTime));&#13;&#10;&#13;&#10; return ds;&#13;&#10;}</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">ReturnType=System.Data.DataSet</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+    <Cell><Data ss:Type="String">Id=FunctionDesc_0f1ca8e3db1c4e2db1538530d8c1c39c</Data><NamedCell
+      ss:Name="Scripts"/></Cell>
+   </Row>
+   <Row ss:Index="42" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Parus.Reporting.Model.Data.SortSettings, Parus.Reporting.Model</Data><NamedCell
+      ss:Name="m_GroupBandGrouping"/></Cell>
+    <Cell><Data ss:Type="String">FieldName=WaybillNumber</Data><NamedCell
+      ss:Name="m_GroupBandGrouping"/></Cell>
+    <Cell><Data ss:Type="String">Disposition=Ascending</Data><NamedCell
+      ss:Name="m_GroupBandGrouping"/></Cell>
+    <Cell><Data ss:Type="String">Id=SortSetting_b87bec79d88444739297c25f3b4d56ae</Data><NamedCell
+      ss:Name="m_GroupBandGrouping"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetVeryHidden</Visible>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
